@@ -1,0 +1,85 @@
+.borbibi_app {
+    padding-top: 150px;
+    padding-bottom: 150px;
+    .borbibi_app_container {
+      background: url(../images/borbibi-apps-background.jpg) no-repeat;
+      background-size: cover;
+      border-radius: 16px;
+      position: relative;
+      padding: 70px 0;
+      &::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        border-radius: 16px;
+        background: rgba($c0a, 0.8);
+      }
+      .borbibi_app_image {
+        position: absolute;
+        left: 80px;
+        top: 50%;
+        transform: translateY(-50%);
+        img {
+          border-radius: 16px;
+        }
+      }
+      .borbibi_app_container__content {
+        h1 {
+          font-size: $fz45;
+          color: $cff;
+          font-family: $play;
+          margin-bottom: 15px;
+        }
+        p {
+          font-size: $fz16;
+          color: $cff;
+          font-weight: $light;
+          margin-bottom: 15px;
+        }
+        ul {
+          @include flexDirection(row);
+          justify-content: flex-start;
+          padding-left: 0;
+          margin-bottom: 30px;
+  
+          li {
+            @extend p;
+            margin-bottom: 0;
+            position: relative;
+            &:not(:last-child) {
+              margin-right: 12px;
+              &::after {
+                content: "";
+                position: absolute;
+                right: -6px;
+                top: 50%;
+                transform: translateY(-50%);
+                height: 13px;
+                width: 1px;
+                background: $cff;
+              }
+            }
+          }
+        }
+        p {
+          font-size: $fz16;
+          color: $cff;
+          font-weight: $light;
+          margin-bottom: 15px;
+        }
+        a {
+          @include inlineFlex;
+          margin-top: 10px;
+          img {
+            border-radius: 12px;
+          }
+          &:not(:last-child) {
+            margin-right: 33px;
+          }
+        }
+      }
+    }
+  }

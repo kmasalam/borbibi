@@ -1,0 +1,45 @@
+body{
+    font-family: $poppins;
+    color: $c73;
+    font-size: $fz16;
+    margin: 0;
+    padding: 0;
+}
+img{
+    max-width: 100%;
+}
+a{
+  &:hover{
+    text-decoration: none;
+  }
+}
+ul, ol {
+    list-style: none;
+  
+    & & {
+      padding: {
+        bottom: 0;
+        left: 0;
+      }
+    }
+  }
+
+  h1,h2,h3,h4,h5,h6,p,a{
+    margin: 0;
+  }
+
+.section_padding_top{
+    padding-top: 130px;
+}
+.section_padding_bottom{
+    padding-bottom: 130px;
+}
+h5{
+  font-size: $fz20;
+}
+h1{
+  font-size: $fz45;
+}
+h3{
+  font-size: $fz28;
+}

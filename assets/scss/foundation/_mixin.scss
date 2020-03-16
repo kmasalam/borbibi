@@ -1,0 +1,94 @@
+@mixin flexDirection($flow) {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  @if $flow == "column" {
+    flex-flow: $flow;
+  } @else if $flow == "row" {
+    flex-flow: $flow;
+  } @else {
+    flex-flow: row-reverse;
+  }
+}
+@mixin transition($timing) {
+  transition: all $timing linear;
+}
+@mixin transition($timing) {
+  transition: all $timing linear;
+}
+@mixin borbibi_bordered_btn($height,$padding,$fz) {
+  line-height: $height;
+  height: $height;
+  padding: 0 $padding;
+  font-size: $fz;
+  box-shadow: 0 0 0 1px $cee2b;
+  border-radius: 30px;
+}
+@mixin inlineFlex {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+@mixin borbibi_section__title($titlecolor, $subtitlecolor, $alignment) {
+  margin-bottom: 70px;
+  h4 {
+    color: $c73;
+    margin-bottom: 10px;
+  }
+  h2 {
+    color: $cf1;
+    font-weight: $bold;
+    font-family: $play;
+    font-size: $fz45;
+  }
+  text-align: center;
+  @if $alignment {
+    text-align: $alignment;
+  }
+  @if $subtitlecolor {
+    h4 {
+      color: $subtitlecolor;
+      margin-bottom: 10px;
+    }
+  }
+  @if $titlecolor {
+    h2 {
+      color: $titlecolor;
+      font-weight: $bold;
+      font-size: $fz45;
+    }
+  }
+}
+@mixin keyframes($animation-name) {
+  @-webkit-keyframes #{$animation-name} {
+    @content;
+  }
+  @-moz-keyframes #{$animation-name} {
+    @content;
+  }
+  @-ms-keyframes #{$animation-name} {
+    @content;
+  }
+  @-o-keyframes #{$animation-name} {
+    @content;
+  }
+  @keyframes #{$animation-name} {
+    @content;
+  }
+}
+@mixin animation($str) {
+    -webkit-animation: #{$str};
+    -moz-animation: #{$str};
+    -ms-animation: #{$str};
+    -o-animation: #{$str};
+    animation: #{$str};      
+  }
+  
+  @include keyframes(rotation) {
+    0% { 
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+     }
+  }

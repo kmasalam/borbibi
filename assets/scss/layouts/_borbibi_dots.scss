@@ -1,0 +1,30 @@
+.borbibi_dots {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    left: 50%;
+    position: relative;
+    margin-top: 50px;
+    transform: translateX(-50%);
+    top: calc(100% + 50px);
+    margin-bottom: 0;
+    li {
+      button {
+        display: none;
+      }
+      height: 15px;
+      width: 15px;
+      border-radius: 50%;
+      border: 2px solid $cac;
+      @include transition(0.3s);
+      &.slick-active {
+        color: $cf1;
+        border-color: $cff;
+        box-shadow: 0px 0px 6px rgba($cf1, 0.6);
+        background: $cf1;
+      }
+      &:not(:last-child) {
+        margin-right: 10px;
+      }
+    }
+  }

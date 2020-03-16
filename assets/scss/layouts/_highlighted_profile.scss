@@ -1,0 +1,27 @@
+.borbibi_highlighted_profile {
+    &__carousel {
+      position: relative;
+      .slick-slide {
+        margin: 0 15px 15px 15px;
+      }
+      .highlighted_profile_item {
+        box-shadow: 0px 7px 13px rgba($c7a, 0.1);
+        &__image {
+        }
+        &__content {
+          @include flexDirection(row);
+          justify-content: space-between;
+          padding: 20px;
+          &__name {
+            p {
+              color: $c2d;
+            }
+          }
+          &__info {
+            color: $c70;
+            font-weight: $extralight;
+          }
+        }
+      }
+    }
+  }

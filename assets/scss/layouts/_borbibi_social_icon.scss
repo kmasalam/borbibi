@@ -1,0 +1,56 @@
+.borbibi_social_icon {
+    @include inlineFlex;
+    margin-bottom: 0;
+    padding-left: 0;
+    li {
+      &:not(:last-child) {
+        margin-right: 14px;
+      }
+      a {
+        height: 45px;
+        width: 45px;
+        background: $c4d4;
+        @include inlineFlex;
+        border-radius: 50%;
+        position: relative;
+        z-index: 5;
+        i {
+          font-size: $fz16;
+          color: $c8f8;
+          position: relative;
+          z-index: 5;
+          @include transition(.40s);
+        }
+        &::before {
+          content: "";
+          position: absolute;
+          left: 0;
+          top: 0;
+          height: 100%;
+          width: 100%;
+          border-radius: 50%;
+          background: #f17677;
+          background: -moz-linear-gradient(top, #f17677 0%, #ee2a4f 100%);
+          background: -webkit-linear-gradient(top, #f17677 0%, #ee2a4f 100%);
+          background: linear-gradient(to bottom, #f17677 0%, #ee2a4f 100%);
+          filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f17677', endColorstr='#ee2a4f',GradientType=0 );
+          border-radius: 50%;
+          z-index: 0;
+          visibility: hidden;
+          opacity: 0;
+          @include transition(.40s);
+        }
+        &:hover{
+              &::before{
+                  visibility: visible;
+                  opacity: 1;
+              }
+              i{
+                  color: $cff;
+              }
+          }
+      }
+      
+      
+    }
+  }

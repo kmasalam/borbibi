@@ -1,0 +1,1290 @@
+@-webkit-keyframes rotation {
+  0% {
+    transform: rotate(0deg); }
+  100% {
+    transform: rotate(360deg); } }
+
+@-moz-keyframes rotation {
+  0% {
+    transform: rotate(0deg); }
+  100% {
+    transform: rotate(360deg); } }
+
+@-ms-keyframes rotation {
+  0% {
+    transform: rotate(0deg); }
+  100% {
+    transform: rotate(360deg); } }
+
+@-o-keyframes rotation {
+  0% {
+    transform: rotate(0deg); }
+  100% {
+    transform: rotate(360deg); } }
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg); }
+  100% {
+    transform: rotate(360deg); } }
+
+body {
+  font-family: "Poppins";
+  color: #737373;
+  font-size: 16px;
+  margin: 0;
+  padding: 0; }
+
+img {
+  max-width: 100%; }
+
+a:hover, .borbibi_navigation__top .borbibi_navigation__top_inner .borbibi_navigation_buttons a.borbibi_btn.active {
+  text-decoration: none; }
+
+ul, ol {
+  list-style: none; }
+  ul ul, ol ul, ul ol, ol ol {
+    padding-bottom: 0;
+    padding-left: 0; }
+
+h1, h2, h3, h4, h5, h6, p, .borbibi_app .borbibi_app_container .borbibi_app_container__content ul li, a {
+  margin: 0; }
+
+.section_padding_top {
+  padding-top: 130px; }
+
+.section_padding_bottom {
+  padding-bottom: 130px; }
+
+h5 {
+  font-size: 20px; }
+
+h1 {
+  font-size: 45px; }
+
+h3 {
+  font-size: 28px; }
+
+.borbibi_btn {
+  font-size: 17px;
+  color: white;
+  line-height: 50px;
+  height: 50px;
+  padding: 0 134px;
+  text-transform: capitalize;
+  border-radius: 30px;
+  background: #f17677;
+  background: -moz-linear-gradient(top, #f17677 0%, #ee2a4f 100%);
+  background: -webkit-linear-gradient(top, #f17677 0%, #ee2a4f 100%);
+  background: linear-gradient(to bottom, #f17677 0%, #ee2a4f 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f17677', endColorstr='#ee2a4f',GradientType=0 );
+  box-shadow: 0px 7px 13px rgba(122, 12, 12, 0.27);
+  border: none;
+  margin-top: 30px; }
+
+@-webkit-keyframes rotation {
+  0% {
+    transform: rotate(0deg); }
+  100% {
+    transform: rotate(360deg); } }
+
+@-moz-keyframes rotation {
+  0% {
+    transform: rotate(0deg); }
+  100% {
+    transform: rotate(360deg); } }
+
+@-ms-keyframes rotation {
+  0% {
+    transform: rotate(0deg); }
+  100% {
+    transform: rotate(360deg); } }
+
+@-o-keyframes rotation {
+  0% {
+    transform: rotate(0deg); }
+  100% {
+    transform: rotate(360deg); } }
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg); }
+  100% {
+    transform: rotate(360deg); } }
+
+.borbibi_dots {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  left: 50%;
+  position: relative;
+  margin-top: 50px;
+  transform: translateX(-50%);
+  top: calc(100% + 50px);
+  margin-bottom: 0; }
+  .borbibi_dots li {
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    border: 2px solid #acacac;
+    transition: all 0.3s linear; }
+    .borbibi_dots li button {
+      display: none; }
+    .borbibi_dots li.slick-active {
+      color: #f17677;
+      border-color: white;
+      box-shadow: 0px 0px 6px rgba(241, 118, 119, 0.6);
+      background: #f17677; }
+    .borbibi_dots li:not(:last-child) {
+      margin-right: 10px; }
+
+.borbibi_social_icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 0;
+  padding-left: 0; }
+  .borbibi_social_icon li:not(:last-child) {
+    margin-right: 14px; }
+  .borbibi_social_icon li a {
+    height: 45px;
+    width: 45px;
+    background: #4d4d51;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    position: relative;
+    z-index: 5; }
+    .borbibi_social_icon li a i {
+      font-size: 16px;
+      color: #8f8f8f;
+      position: relative;
+      z-index: 5;
+      transition: all 0.4s linear; }
+    .borbibi_social_icon li a::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      height: 100%;
+      width: 100%;
+      border-radius: 50%;
+      background: #f17677;
+      background: -moz-linear-gradient(top, #f17677 0%, #ee2a4f 100%);
+      background: -webkit-linear-gradient(top, #f17677 0%, #ee2a4f 100%);
+      background: linear-gradient(to bottom, #f17677 0%, #ee2a4f 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f17677', endColorstr='#ee2a4f',GradientType=0 );
+      border-radius: 50%;
+      z-index: 0;
+      visibility: hidden;
+      opacity: 0;
+      transition: all 0.4s linear; }
+    .borbibi_social_icon li a:hover::before, .borbibi_social_icon li .borbibi_navigation__top .borbibi_navigation__top_inner .borbibi_navigation_buttons a.borbibi_btn.active::before, .borbibi_navigation__top .borbibi_navigation__top_inner .borbibi_navigation_buttons .borbibi_social_icon li a.borbibi_btn.active::before {
+      visibility: visible;
+      opacity: 1; }
+    .borbibi_social_icon li a:hover i, .borbibi_social_icon li .borbibi_navigation__top .borbibi_navigation__top_inner .borbibi_navigation_buttons a.borbibi_btn.active i, .borbibi_navigation__top .borbibi_navigation__top_inner .borbibi_navigation_buttons .borbibi_social_icon li a.borbibi_btn.active i {
+      color: white; }
+
+/*------------------------------------------
+------------------------------------------*/
+.borbibi_section__title {
+  margin-bottom: 70px;
+  text-align: center; }
+  .borbibi_section__title h4 {
+    color: #737373;
+    margin-bottom: 10px; }
+  .borbibi_section__title h2 {
+    color: #f17677;
+    font-weight: 700;
+    font-family: "Playfair Display";
+    font-size: 45px; }
+
+/*------------------------------------------
+------------------------------------------*/
+/*------------------------------------------
+------------------------------------------*/
+.borbibi_highlighted_profile__carousel {
+  position: relative; }
+  .borbibi_highlighted_profile__carousel .slick-slide {
+    margin: 0 15px 15px 15px; }
+  .borbibi_highlighted_profile__carousel .highlighted_profile_item {
+    box-shadow: 0px 7px 13px rgba(122, 12, 12, 0.1); }
+    .borbibi_highlighted_profile__carousel .highlighted_profile_item__content {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-flow: row;
+      justify-content: space-between;
+      padding: 20px; }
+      .borbibi_highlighted_profile__carousel .highlighted_profile_item__content__name p, .borbibi_highlighted_profile__carousel .highlighted_profile_item__content__name .borbibi_app .borbibi_app_container .borbibi_app_container__content ul li, .borbibi_app .borbibi_app_container .borbibi_app_container__content ul .borbibi_highlighted_profile__carousel .highlighted_profile_item__content__name li {
+        color: #2d2e32; }
+      .borbibi_highlighted_profile__carousel .highlighted_profile_item__content__info {
+        color: #707070;
+        font-weight: 200; }
+
+/*------------------------------------------
+------------------------------------------*/
+.borbibi_success_story {
+  position: relative;
+  background-size: cover;
+  margin-bottom: 70px;
+  text-align: center;
+  margin-bottom: 0; }
+  .borbibi_success_story h4 {
+    color: #737373;
+    margin-bottom: 10px; }
+  .borbibi_success_story h2 {
+    color: #f17677;
+    font-weight: 700;
+    font-family: "Playfair Display";
+    font-size: 45px; }
+  .borbibi_success_story h4 {
+    color: #ffec83;
+    margin-bottom: 10px; }
+  .borbibi_success_story h2 {
+    color: white;
+    font-weight: 700;
+    font-size: 45px; }
+  .borbibi_success_story__elements {
+    position: absolute;
+    opacity: .5; }
+    .borbibi_success_story__elements.elements_one {
+      left: 0;
+      top: 0; }
+    .borbibi_success_story__elements.elements_two {
+      right: 0;
+      bottom: 0; }
+    .borbibi_success_story__elements.elements_three {
+      right: 0;
+      top: 20px;
+      opacity: .1; }
+  .borbibi_success_story .borbibi_success_grid .borbibi_success_item {
+    margin-bottom: 30px; }
+    .borbibi_success_story .borbibi_success_grid .borbibi_success_item__inner {
+      position: relative; }
+      .borbibi_success_story .borbibi_success_grid .borbibi_success_item__inner .borbibi_success_item__inner__content {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        bottom: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-flow: row;
+        align-items: flex-end;
+        justify-content: space-between;
+        padding: 15px;
+        background: -moz-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 0%, #00000a 100%);
+        background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 0%, #00000a 100%);
+        background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 0%, #00000a 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#00000a',GradientType=0 ); }
+        .borbibi_success_story .borbibi_success_grid .borbibi_success_item__inner .borbibi_success_item__inner__content .borbibi_success_item__inner__content_name a {
+          font-weight: 200;
+          color: white; }
+        .borbibi_success_story .borbibi_success_grid .borbibi_success_item__inner .borbibi_success_item__inner__content .borbibi_success_item__inner__content_info {
+          position: absolute;
+          top: 20px;
+          right: 20px; }
+          .borbibi_success_story .borbibi_success_grid .borbibi_success_item__inner .borbibi_success_item__inner__content .borbibi_success_item__inner__content_info p, .borbibi_success_story .borbibi_success_grid .borbibi_success_item__inner .borbibi_success_item__inner__content .borbibi_success_item__inner__content_info .borbibi_app .borbibi_app_container .borbibi_app_container__content ul li, .borbibi_app .borbibi_app_container .borbibi_app_container__content ul .borbibi_success_story .borbibi_success_grid .borbibi_success_item__inner .borbibi_success_item__inner__content .borbibi_success_item__inner__content_info li {
+            font-weight: 200;
+            color: white; }
+
+/*------------------------------------------
+------------------------------------------*/
+.borbibi_has_eye {
+  position: relative; }
+  .borbibi_has_eye .borbibi_eye {
+    position: absolute;
+    right: 10px;
+    bottom: 14px; }
+
+.select2-selection {
+  line-height: 40px !important;
+  height: 40px !important;
+  border: none !important; }
+
+.select2-container--default .select2-selection--single .select2-selection__arrow {
+  height: 36px;
+  position: absolute;
+  top: 1px;
+  right: 8px;
+  width: 20px; }
+
+.select2-selection {
+  border: none !important;
+  outline: none !important; }
+
+.select2-container--default {
+  display: block; }
+
+.select2-container--default .select2-selection--single {
+  border-radius: 46px !important; }
+
+.select2-selection__rendered, .borbibi_signup .borbibi_signup__container .form-group .form-control,
+.borbibi_signup .borbibi_signup__container .form-group .select2-selection__rendered, .borbibi_banner__searchbox .borbibi_searchbox_content form .borbibi_searchbox_field .form-group.borbibi_age .select2-selection__rendered, fieldset .borbibi_field_group .borbibi_group_field .group-control .form-control .select2-selection__rendered, fieldset .borbibi_field_group .borbibi_group_field .group-control .select2-container--default .select2-selection__rendered {
+  border: 1px solid #ffd0d0;
+  border-radius: 46px;
+  position: relative;
+  background: white;
+  color: #9b9b9b;
+  font-size: 14px;
+  height: 40px;
+  line-height: 40px;
+  padding: 0 0 0 15px;
+  border-radius: 46px !important; }
+
+.borbibi_aggrement_check {
+  margin-top: 20px; }
+  .borbibi_aggrement_check .borbibi_check {
+    font-size: 14px;
+    color: #808080;
+    font-weight: 300;
+    position: relative; }
+    .borbibi_aggrement_check .borbibi_check input {
+      height: 17px;
+      width: 17px;
+      z-index: 20;
+      left: 0;
+      top: 0;
+      opacity: 0;
+      position: relative;
+      cursor: pointer; }
+      .borbibi_aggrement_check .borbibi_check input:checked + label::after {
+        visibility: visible;
+        opacity: 1;
+        transform: scale(1); }
+    .borbibi_aggrement_check .borbibi_check label {
+      padding-left: 10px; }
+      .borbibi_aggrement_check .borbibi_check label::before {
+        content: "";
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        height: 17px;
+        width: 17px;
+        background: #f17677;
+        border-radius: 50%;
+        z-index: 0; }
+      .borbibi_aggrement_check .borbibi_check label::after {
+        position: absolute;
+        font-family: "FontAwesome";
+        content: "\f00c";
+        left: 1px;
+        top: -1px;
+        color: #eaeaea;
+        font-size: 14px;
+        visibility: 0;
+        opacity: 0;
+        transition: all 0.3s linear;
+        transform: scale(1.5); }
+      .borbibi_aggrement_check .borbibi_check label a {
+        color: #f17677; }
+
+/*--------------------------------
+--------------------------------*/
+.borbibi_signup {
+  background: #eaeaea;
+  padding-top: 70px;
+  padding-bottom: 70px;
+  position: relative; }
+  .borbibi_signup .borbibi_signup__pattern {
+    position: absolute;
+    z-index: 0;
+    opacity: 0.7; }
+    .borbibi_signup .borbibi_signup__pattern.signup_pattern_one {
+      left: 0;
+      top: 0; }
+    .borbibi_signup .borbibi_signup__pattern.signup_pattern_two {
+      right: 0;
+      top: 0;
+      filter: grayscale(100%); }
+    .borbibi_signup .borbibi_signup__pattern.signup_pattern_three {
+      right: 0;
+      bottom: 0; }
+    .borbibi_signup .borbibi_signup__pattern.signup_pattern_four {
+      left: 0;
+      bottom: 0;
+      filter: grayscale(100%); }
+  .borbibi_signup .borbibi_signup__container {
+    border: 2px solid #f17677;
+    border-radius: 46px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    position: relative;
+    z-index: 9; }
+    .borbibi_signup .borbibi_signup__container .form-group label {
+      font-family: "Poppins";
+      font-size: 14px;
+      color: #46474f;
+      margin-bottom: 10px; }
+    .borbibi_signup .borbibi_signup__container .form-group .form-control:focus,
+    .borbibi_signup .borbibi_signup__container .form-group .form-control:focus,
+    .borbibi_signup .borbibi_signup__container .form-group .select2-selection__rendered:focus,
+    .borbibi_signup .borbibi_signup__container .borbibi_banner__searchbox .borbibi_searchbox_content form .borbibi_searchbox_field .form-group.borbibi_age .select2-selection__rendered:focus,
+    .borbibi_banner__searchbox .borbibi_searchbox_content form .borbibi_searchbox_field .borbibi_signup .borbibi_signup__container .form-group.borbibi_age .select2-selection__rendered:focus,
+    .borbibi_signup .borbibi_signup__container .form-group fieldset .borbibi_field_group .borbibi_group_field .group-control .form-control .select2-selection__rendered:focus,
+    fieldset .borbibi_field_group .borbibi_group_field .group-control .form-control .borbibi_signup .borbibi_signup__container .form-group .select2-selection__rendered:focus,
+    .borbibi_signup .borbibi_signup__container .form-group fieldset .borbibi_field_group .borbibi_group_field .group-control .select2-container--default .select2-selection__rendered:focus,
+    fieldset .borbibi_field_group .borbibi_group_field .group-control .select2-container--default .borbibi_signup .borbibi_signup__container .form-group .select2-selection__rendered:focus {
+      box-shadow: none;
+      outline: none; }
+    .borbibi_signup .borbibi_signup__container .borbibi_register_submit_area .borbibi_btn {
+      padding-left: 30px;
+      padding-right: 30px;
+      font-weight: 300;
+      margin-bottom: 25px; }
+    .borbibi_signup .borbibi_signup__container .borbibi_register_submit_area span {
+      font-size: 16px;
+      color: #f17677;
+      text-transform: uppercase;
+      font-weight: 500;
+      display: block; }
+    .borbibi_signup .borbibi_signup__container .borbibi_signup__container_social {
+      margin-top: 30px; }
+      .borbibi_signup .borbibi_signup__container .borbibi_signup__container_social .borbibi_social_btn {
+        list-style: 45px;
+        height: 45px;
+        padding: 0 40px;
+        display: inline-flex;
+        align-items: center;
+        justify-self: center;
+        font-weight: 300;
+        margin-top: 0px;
+        background: #b2b2b2; }
+        .borbibi_signup .borbibi_signup__container .borbibi_signup__container_social .borbibi_social_btn:not(:last-child) {
+          margin-right: 30px; }
+        .borbibi_signup .borbibi_signup__container .borbibi_signup__container_social .borbibi_social_btn i {
+          display: inline-block;
+          padding-right: 7px; }
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0); }
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0); } }
+
+.fadeInDown {
+  -webkit-animation-name: fadeInDown;
+  animation-name: fadeInDown; }
+
+/*------------------------------------------
+------------------------------------------*/
+/*------------------------------------------
+------------------------------------------*/
+.select2-selection__rendered, .borbibi_signup .borbibi_signup__container .form-group .form-control,
+.borbibi_signup .borbibi_signup__container .form-group .select2-selection__rendered, .borbibi_banner__searchbox .borbibi_searchbox_content form .borbibi_searchbox_field .form-group.borbibi_age .select2-selection__rendered, fieldset .borbibi_field_group .borbibi_group_field .group-control .form-control .select2-selection__rendered, fieldset .borbibi_field_group .borbibi_group_field .group-control .select2-container--default .select2-selection__rendered {
+  line-height: 40px !important; }
+
+.borbibi_banner {
+  position: relative; }
+  .borbibi_banner .borbibi_banner__carousel .borbibi_dots {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 20px;
+    top: initial; }
+    .borbibi_banner .borbibi_banner__carousel .borbibi_dots li {
+      border-color: white;
+      cursor: pointer; }
+  .borbibi_banner .borbibi_banner__carousel .borbibi_banner__carousel_item {
+    position: relative; }
+    .borbibi_banner .borbibi_banner__carousel .borbibi_banner__carousel_item.slick-current .borbibi_banner__carousel_content * {
+      -webkit-animation-name: fadeInDown;
+      animation-name: fadeInDown;
+      -webkit-animation-duration: 2s;
+      animation-duration: 2s;
+      -webkit-animation-fill-mode: both;
+      animation-fill-mode: both; }
+    .borbibi_banner .borbibi_banner__carousel .borbibi_banner__carousel_item.slick-current .borbibi_banner__carousel_content h5 {
+      animation-delay: 0.1s; }
+    .borbibi_banner .borbibi_banner__carousel .borbibi_banner__carousel_item.slick-current .borbibi_banner__carousel_content h1 {
+      animation-delay: 0.2s; }
+    .borbibi_banner .borbibi_banner__carousel .borbibi_banner__carousel_item.slick-current .borbibi_banner__carousel_content p, .borbibi_banner .borbibi_banner__carousel .borbibi_banner__carousel_item.slick-current .borbibi_banner__carousel_content .borbibi_app .borbibi_app_container .borbibi_app_container__content ul li, .borbibi_app .borbibi_app_container .borbibi_app_container__content ul .borbibi_banner .borbibi_banner__carousel .borbibi_banner__carousel_item.slick-current .borbibi_banner__carousel_content li {
+      animation-delay: 0.3s; }
+    .borbibi_banner .borbibi_banner__carousel .borbibi_banner__carousel_item::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 10, 0.6); }
+    .borbibi_banner .borbibi_banner__carousel .borbibi_banner__carousel_item .borbibi_banner__carousel_content {
+      text-align: center;
+      height: calc(100vh + 70px);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-flow: column;
+      padding-bottom: 0px; }
+      .borbibi_banner .borbibi_banner__carousel .borbibi_banner__carousel_item .borbibi_banner__carousel_content h5 {
+        color: white;
+        padding-bottom: 10px; }
+      .borbibi_banner .borbibi_banner__carousel .borbibi_banner__carousel_item .borbibi_banner__carousel_content h1 {
+        color: white;
+        font-family: "Playfair Display";
+        font-weight: 700;
+        font-size: 60px;
+        padding-bottom: 20px; }
+      .borbibi_banner .borbibi_banner__carousel .borbibi_banner__carousel_item .borbibi_banner__carousel_content p, .borbibi_banner .borbibi_banner__carousel .borbibi_banner__carousel_item .borbibi_banner__carousel_content .borbibi_app .borbibi_app_container .borbibi_app_container__content ul li, .borbibi_app .borbibi_app_container .borbibi_app_container__content ul .borbibi_banner .borbibi_banner__carousel .borbibi_banner__carousel_item .borbibi_banner__carousel_content li {
+        color: white; }
+  .borbibi_banner__searchbox {
+    position: absolute;
+    bottom: 80px;
+    width: 100%; }
+    .borbibi_banner__searchbox .borbibi_searchbox_content {
+      border: 1px solid #ee2a4f;
+      background: rgba(0, 0, 10, 0.4);
+      padding-left: 70px;
+      overflow: hidden;
+      border-radius: 100px; }
+      .borbibi_banner__searchbox .borbibi_searchbox_content form {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-flow: row; }
+        .borbibi_banner__searchbox .borbibi_searchbox_content form .borbibi_searchbox_field {
+          flex: 0 0 20%;
+          max-width: 20%; }
+          .borbibi_banner__searchbox .borbibi_searchbox_content form .borbibi_searchbox_field label {
+            color: white; }
+          .borbibi_banner__searchbox .borbibi_searchbox_content form .borbibi_searchbox_field:not(:last-child) {
+            margin-right: 12px; }
+          .borbibi_banner__searchbox .borbibi_searchbox_content form .borbibi_searchbox_field:last-child {
+            text-align: left;
+            background: white;
+            padding-top: 20px;
+            padding-bottom: 15px;
+            padding-right: 50px;
+            background: white; }
+          .borbibi_banner__searchbox .borbibi_searchbox_content form .borbibi_searchbox_field a {
+            color: #ee2a4f;
+            font-size: 14px;
+            font-style: italic;
+            display: inline-block;
+            padding-left: 10px; }
+          .borbibi_banner__searchbox .borbibi_searchbox_content form .borbibi_searchbox_field .form-group {
+            width: 100%; }
+            .borbibi_banner__searchbox .borbibi_searchbox_content form .borbibi_searchbox_field .form-group.borbibi_age {
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              flex-flow: row;
+              background: white;
+              border-radius: 46px; }
+              .borbibi_banner__searchbox .borbibi_searchbox_content form .borbibi_searchbox_field .form-group.borbibi_age .borbibi_searchbox_age_devider {
+                color: #f17677;
+                height: 30px;
+                width: 30px;
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 14px;
+                background: #ececec;
+                border-radius: 50%; }
+            .borbibi_banner__searchbox .borbibi_searchbox_content form .borbibi_searchbox_field .form-group .select2-container {
+              width: 100% !important; }
+              .borbibi_banner__searchbox .borbibi_searchbox_content form .borbibi_searchbox_field .form-group .select2-container .select2-selection__rendered, .borbibi_banner__searchbox .borbibi_searchbox_content form .borbibi_searchbox_field .borbibi_signup .borbibi_signup__container .form-group .select2-container .form-control, .borbibi_signup .borbibi_signup__container .borbibi_banner__searchbox .borbibi_searchbox_content form .borbibi_searchbox_field .form-group .select2-container .form-control {
+                line-height: 40px !important; }
+          .borbibi_banner__searchbox .borbibi_searchbox_content form .borbibi_searchbox_field .borbibi_btn {
+            padding: 0 20px;
+            border-top-left-radius: 0;
+            border-bottom-left-radius: 0;
+            font-weight: 300;
+            font-size: 14px; }
+
+/*------------------------------------------
+------------------------------------------*/
+.borbibi_brand_logo, .borbibi_footer__top .borbibi_footer__top_inner .borbibi_brand_logo {
+  height: 146px;
+  width: 146px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: white;
+  border-radius: 50%;
+  position: relative; }
+  .borbibi_brand_logo::before, .borbibi_footer__top .borbibi_footer__top_inner .borbibi_brand_logo::before {
+    content: "";
+    position: absolute;
+    left: -10px;
+    top: -10px;
+    width: calc(100% + 20px);
+    height: calc(100% + 20px);
+    border: 5px dotted white;
+    border-radius: 50%;
+    -webkit-animation: rotation 1s linear infinite;
+    -moz-animation: rotation 1s linear infinite;
+    -ms-animation: rotation 1s linear infinite;
+    -o-animation: rotation 1s linear infinite;
+    animation: rotation 1s linear infinite; }
+
+.borbibi_footer {
+  position: relative; }
+  .borbibi_footer__top {
+    padding-top: 125px; }
+    .borbibi_footer__top .borbibi_footer_shape {
+      position: absolute;
+      left: 0;
+      width: 100%;
+      top: 0; }
+    .borbibi_footer__top .borbibi_footer__top_inner {
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-flow: row; }
+      .borbibi_footer__top .borbibi_footer__top_inner a:not(:last-child) {
+        margin-right: 40px; }
+      .borbibi_footer__top .borbibi_footer__top_inner .borbibi_support, .borbibi_footer__top .borbibi_footer__top_inner .borbibi_help_line {
+        background: #2d2d32;
+        color: white;
+        font-size: 16px;
+        text-transform: uppercase;
+        padding: 8px 23px;
+        border: 2px solid #1b1b1f;
+        border-radius: 30px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.4s linear;
+        position: relative;
+        z-index: 9; }
+        .borbibi_footer__top .borbibi_footer__top_inner .borbibi_support i, .borbibi_footer__top .borbibi_footer__top_inner .borbibi_help_line i {
+          display: inline-block;
+          padding-right: 10px; }
+        .borbibi_footer__top .borbibi_footer__top_inner .borbibi_support:before, .borbibi_footer__top .borbibi_footer__top_inner .borbibi_help_line:before {
+          content: "";
+          position: absolute;
+          left: 0;
+          top: 0;
+          width: 100%;
+          height: 0%;
+          border-radius: 30px;
+          background: white;
+          transition: all 0.4s linear;
+          z-index: -1; }
+        .borbibi_footer__top .borbibi_footer__top_inner .borbibi_support:hover, .borbibi_footer__top .borbibi_footer__top_inner .borbibi_help_line:hover, .borbibi_footer__top .borbibi_footer__top_inner .borbibi_navigation__top .borbibi_navigation__top_inner .borbibi_navigation_buttons .borbibi_help_line.borbibi_btn.active, .borbibi_navigation__top .borbibi_navigation__top_inner .borbibi_navigation_buttons .borbibi_footer__top .borbibi_footer__top_inner .borbibi_help_line.borbibi_btn.active, .borbibi_footer__top .borbibi_footer__top_inner .borbibi_navigation__top .borbibi_navigation__top_inner .borbibi_navigation_buttons .borbibi_support.borbibi_btn.active, .borbibi_navigation__top .borbibi_navigation__top_inner .borbibi_navigation_buttons .borbibi_footer__top .borbibi_footer__top_inner .borbibi_support.borbibi_btn.active {
+          color: #2d2d32; }
+          .borbibi_footer__top .borbibi_footer__top_inner .borbibi_support:hover::before, .borbibi_footer__top .borbibi_footer__top_inner .borbibi_help_line:hover::before, .borbibi_footer__top .borbibi_footer__top_inner .borbibi_navigation__top .borbibi_navigation__top_inner .borbibi_navigation_buttons .borbibi_help_line.borbibi_btn.active::before, .borbibi_navigation__top .borbibi_navigation__top_inner .borbibi_navigation_buttons .borbibi_footer__top .borbibi_footer__top_inner .borbibi_help_line.borbibi_btn.active::before, .borbibi_footer__top .borbibi_footer__top_inner .borbibi_navigation__top .borbibi_navigation__top_inner .borbibi_navigation_buttons .borbibi_support.borbibi_btn.active::before, .borbibi_navigation__top .borbibi_navigation__top_inner .borbibi_navigation_buttons .borbibi_footer__top .borbibi_footer__top_inner .borbibi_support.borbibi_btn.active::before {
+            height: 100%; }
+  .borbibi_footer__middle {
+    padding-top: 40px;
+    background: #212126;
+    padding-bottom: 60px;
+    text-align: center; }
+    .borbibi_footer__middle .borbibi_footer_menu ul {
+      padding-left: 0;
+      margin-bottom: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-flow: row;
+      margin-top: 30px; }
+      .borbibi_footer__middle .borbibi_footer_menu ul li:not(:last-child) {
+        margin-right: 25px; }
+      .borbibi_footer__middle .borbibi_footer_menu ul li a {
+        color: white;
+        font-size: 14px;
+        transition: all 0.4s linear; }
+        .borbibi_footer__middle .borbibi_footer_menu ul li a:hover, .borbibi_footer__middle .borbibi_footer_menu ul li .borbibi_navigation__top .borbibi_navigation__top_inner .borbibi_navigation_buttons a.borbibi_btn.active, .borbibi_navigation__top .borbibi_navigation__top_inner .borbibi_navigation_buttons .borbibi_footer__middle .borbibi_footer_menu ul li a.borbibi_btn.active {
+          color: #c18b4d; }
+  .borbibi_footer__bottom {
+    background: #212126;
+    padding: 22px 0;
+    border-top: 1px solid #1b1b1f;
+    text-align: center; }
+    .borbibi_footer__bottom .borbibi_copyright_text {
+      font-size: 14px;
+      color: #c18b4d;
+      text-align: center;
+      text-transform: uppercase; }
+
+/*------------------------------------------
+------------------------------------------*/
+.borbibi_navigation {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 0;
+  z-index: 9;
+  padding: 20px 0; }
+  .borbibi_navigation__top {
+    width: 100%; }
+    .borbibi_navigation__top .borbibi_navigation__top_inner {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-flow: row;
+      justify-content: space-between; }
+      .borbibi_navigation__top .borbibi_navigation__top_inner .borbi_navigation_brand_logo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-flow: row; }
+        .borbibi_navigation__top .borbibi_navigation__top_inner .borbi_navigation_brand_logo .borbibi_brand_logo {
+          display: inline-flex;
+          align-items: center;
+          justify-content: center;
+          margin-left: 25px;
+          margin-right: 25px;
+          height: 120px;
+          width: 120px; }
+          .borbibi_navigation__top .borbibi_navigation__top_inner .borbi_navigation_brand_logo .borbibi_brand_logo::before {
+            -webkit-animation: rotation 5s linear infinite;
+            -moz-animation: rotation 5s linear infinite;
+            -ms-animation: rotation 5s linear infinite;
+            -o-animation: rotation 5s linear infinite;
+            animation: rotation 5s linear infinite; }
+      .borbibi_navigation__top .borbibi_navigation__top_inner .borbibi_navigation_buttons a {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center; }
+        .borbibi_navigation__top .borbibi_navigation__top_inner .borbibi_navigation_buttons a:not(:last-child) {
+          margin-right: 20px; }
+      .borbibi_navigation__top .borbibi_navigation__top_inner .borbibi_navigation_buttons .borbibi_btn {
+        border: 2px solid white;
+        border-radius: 30px;
+        padding: 6px 20px;
+        font-size: 14px;
+        background: transparent;
+        position: relative;
+        z-index: 5;
+        transition: all 0.4s linear; }
+        .borbibi_navigation__top .borbibi_navigation__top_inner .borbibi_navigation_buttons .borbibi_btn::before {
+          content: "";
+          position: absolute;
+          left: 0;
+          top: 0;
+          height: 100%;
+          width: 100%;
+          border-radius: 30px;
+          background: #f17677;
+          background: -moz-linear-gradient(top, #f17677 0%, #ee2a4f 100%);
+          background: -webkit-linear-gradient(top, #f17677 0%, #ee2a4f 100%);
+          background: linear-gradient(to bottom, #f17677 0%, #ee2a4f 100%);
+          filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f17677', endColorstr='#ee2a4f',GradientType=0 );
+          z-index: 0;
+          visibility: hidden;
+          opacity: 0;
+          transition: all 0.4s linear;
+          z-index: -1; }
+        .borbibi_navigation__top .borbibi_navigation__top_inner .borbibi_navigation_buttons .borbibi_btn:hover, .borbibi_navigation__top .borbibi_navigation__top_inner .borbibi_navigation_buttons .borbibi_btn.active {
+          color: white;
+          border-color: transparent; }
+          .borbibi_navigation__top .borbibi_navigation__top_inner .borbibi_navigation_buttons .borbibi_btn:hover::before, .borbibi_navigation__top .borbibi_navigation__top_inner .borbibi_navigation_buttons .borbibi_btn.active::before {
+            visibility: visible;
+            opacity: 1; }
+          .borbibi_navigation__top .borbibi_navigation__top_inner .borbibi_navigation_buttons .borbibi_btn:hover i, .borbibi_navigation__top .borbibi_navigation__top_inner .borbibi_navigation_buttons .borbibi_btn.active i {
+            color: white; }
+        .borbibi_navigation__top .borbibi_navigation__top_inner .borbibi_navigation_buttons .borbibi_btn i {
+          display: inline-block;
+          padding-right: 5px; }
+  .borbibi_navigation__bottom {
+    width: 100%;
+    padding-top: 30px; }
+    .borbibi_navigation__bottom .borbibi_nav {
+      margin-right: 130px; }
+      .borbibi_navigation__bottom .borbibi_nav ul {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-flow: row; }
+        .borbibi_navigation__bottom .borbibi_nav ul li:not(:last-child) {
+          margin-right: 30px; }
+        .borbibi_navigation__bottom .borbibi_nav ul li a {
+          font-size: 16px;
+          color: white; }
+
+/*------------------------------------------
+------------------------------------------*/
+.borbibi_app {
+  padding-top: 150px;
+  padding-bottom: 150px; }
+  .borbibi_app .borbibi_app_container {
+    background: url(../images/borbibi-apps-background.jpg) no-repeat;
+    background-size: cover;
+    border-radius: 16px;
+    position: relative;
+    padding: 70px 0; }
+    .borbibi_app .borbibi_app_container::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      border-radius: 16px;
+      background: rgba(0, 0, 10, 0.8); }
+    .borbibi_app .borbibi_app_container .borbibi_app_image {
+      position: absolute;
+      left: 80px;
+      top: 50%;
+      transform: translateY(-50%); }
+      .borbibi_app .borbibi_app_container .borbibi_app_image img {
+        border-radius: 16px; }
+    .borbibi_app .borbibi_app_container .borbibi_app_container__content h1 {
+      font-size: 45px;
+      color: white;
+      font-family: "Playfair Display";
+      margin-bottom: 15px; }
+    .borbibi_app .borbibi_app_container .borbibi_app_container__content p, .borbibi_app .borbibi_app_container .borbibi_app_container__content ul li {
+      font-size: 16px;
+      color: white;
+      font-weight: 300;
+      margin-bottom: 15px; }
+    .borbibi_app .borbibi_app_container .borbibi_app_container__content ul {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-flow: row;
+      justify-content: flex-start;
+      padding-left: 0;
+      margin-bottom: 30px; }
+      .borbibi_app .borbibi_app_container .borbibi_app_container__content ul li {
+        margin-bottom: 0;
+        position: relative; }
+        .borbibi_app .borbibi_app_container .borbibi_app_container__content ul li:not(:last-child) {
+          margin-right: 12px; }
+          .borbibi_app .borbibi_app_container .borbibi_app_container__content ul li:not(:last-child)::after {
+            content: "";
+            position: absolute;
+            right: -6px;
+            top: 50%;
+            transform: translateY(-50%);
+            height: 13px;
+            width: 1px;
+            background: white; }
+    .borbibi_app .borbibi_app_container .borbibi_app_container__content p, .borbibi_app .borbibi_app_container .borbibi_app_container__content ul li {
+      font-size: 16px;
+      color: white;
+      font-weight: 300;
+      margin-bottom: 15px; }
+    .borbibi_app .borbibi_app_container .borbibi_app_container__content a {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 10px; }
+      .borbibi_app .borbibi_app_container .borbibi_app_container__content a img {
+        border-radius: 12px; }
+      .borbibi_app .borbibi_app_container .borbibi_app_container__content a:not(:last-child) {
+        margin-right: 33px; }
+
+/*------------------------------------------
+------------------------------------------*/
+.borbibi_scrolltop {
+  position: fixed;
+  right: 30px;
+  bottom: 70px;
+  z-index: 50;
+  border: 2px solid #c18b4d;
+  height: 40px;
+  padding: 10px 20px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column;
+  cursor: pointer;
+  display: none;
+  color: #c18b4d;
+  align-items: center; }
+  .borbibi_scrolltop i {
+    position: absolute;
+    bottom: calc(100% + 0px);
+    left: 50%;
+    transform: translateX(-50%); }
+
+/*------------------------------------------
+------------------------------------------*/
+.borbibi_signup_form {
+  background: #fbf7f8;
+  padding-bottom: 150px;
+  margin-bottom: -100px;
+  position: relative; }
+  .borbibi_signup_form > img {
+    position: absolute;
+    z-index: 0;
+    opacity: 0.5; }
+  .borbibi_signup_form .borbibi_pattern1 {
+    top: 0;
+    left: 0; }
+  .borbibi_signup_form .borbibi_pattern2 {
+    top: 0;
+    right: 0;
+    filter: grayscale(100%); }
+  .borbibi_signup_form .borbibi_pattern3 {
+    right: 0;
+    bottom: 0; }
+  .borbibi_signup_form .borbibi_pattern4 {
+    left: 0;
+    bottom: 0;
+    filter: grayscale(100%); }
+  .borbibi_signup_form .borbibi_section__title h3 {
+    font-weight: 700;
+    font-family: "Playfair Display"; }
+  .borbibi_signup_form .borbibi_signup_form_inner {
+    border: 1px solid #f17677;
+    border-radius: 45px; }
+    .borbibi_signup_form .borbibi_signup_form_inner .borbibi_sidebar {
+      background: white;
+      padding: 60px 40px 60px  40px;
+      border-top-left-radius: 45px;
+      border-bottom-left-radius: 45px;
+      margin-right: 30px;
+      text-align: left;
+      height: 100%; }
+      .borbibi_signup_form .borbibi_signup_form_inner .borbibi_sidebar h5 {
+        font-size: 20px;
+        color: #ff4f4f;
+        font-family: "Playfair Display";
+        line-height: 30px; }
+      .borbibi_signup_form .borbibi_signup_form_inner .borbibi_sidebar ul {
+        padding-left: 0;
+        margin-top: 25px;
+        margin-bottom: 25px; }
+        .borbibi_signup_form .borbibi_signup_form_inner .borbibi_sidebar ul li {
+          font-size: 16px;
+          color: #46474f;
+          line-height: 26px; }
+          .borbibi_signup_form .borbibi_signup_form_inner .borbibi_sidebar ul li:not(:last-child) {
+            margin-bottom: 10px; }
+          .borbibi_signup_form .borbibi_signup_form_inner .borbibi_sidebar ul li i {
+            font-size: 14px;
+            color: #ff4f4f;
+            display: inline-block;
+            margin-right: 5px; }
+      .borbibi_signup_form .borbibi_signup_form_inner .borbibi_sidebar p, .borbibi_signup_form .borbibi_signup_form_inner .borbibi_sidebar .borbibi_app .borbibi_app_container .borbibi_app_container__content ul li, .borbibi_app .borbibi_app_container .borbibi_app_container__content ul .borbibi_signup_form .borbibi_signup_form_inner .borbibi_sidebar li {
+        font-style: italic;
+        font-size: 14px;
+        color: #46474f;
+        padding-top: 20px;
+        padding-bottom: 20px; }
+      .borbibi_signup_form .borbibi_signup_form_inner .borbibi_sidebar .borbibi_sidebar_contact {
+        font-size: 16px;
+        color: #46474f;
+        margin-bottom: 10px; }
+        .borbibi_signup_form .borbibi_signup_form_inner .borbibi_sidebar .borbibi_sidebar_contact i {
+          font-size: 14px;
+          color: #ff4f4f;
+          display: inline-block;
+          margin-right: 5px; }
+      .borbibi_signup_form .borbibi_signup_form_inner .borbibi_sidebar .borbibi_bordered_btn {
+        line-height: 45px;
+        height: 45px;
+        padding: 0 30px;
+        font-size: 16px;
+        box-shadow: 0 0 0 1px #ee2b50;
+        border-radius: 30px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        z-index: 9;
+        transition: all 0.4s linear;
+        border: none;
+        background: white;
+        margin-top: 20px;
+        color: #ff4f4f; }
+        .borbibi_signup_form .borbibi_signup_form_inner .borbibi_sidebar .borbibi_bordered_btn i {
+          display: inline-block;
+          margin-right: 10px; }
+        .borbibi_signup_form .borbibi_signup_form_inner .borbibi_sidebar .borbibi_bordered_btn::before {
+          content: "";
+          position: absolute;
+          left: 0;
+          top: 0;
+          width: 100%;
+          height: 100%;
+          background: #f17677;
+          background: -moz-linear-gradient(top, #f17677 0%, #ee2a4f 100%);
+          background: -webkit-linear-gradient(top, #f17677 0%, #ee2a4f 100%);
+          background: linear-gradient(to bottom, #f17677 0%, #ee2a4f 100%);
+          filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f17677', endColorstr='#ee2a4f',GradientType=0 );
+          box-shadow: 0px 7px 13px rgba(122, 12, 12, 0.27);
+          border-radius: 30px;
+          transition: all 0.4s linear;
+          z-index: -1;
+          visibility: hidden;
+          opacity: 0; }
+        .borbibi_signup_form .borbibi_signup_form_inner .borbibi_sidebar .borbibi_bordered_btn:hover, .borbibi_signup_form .borbibi_signup_form_inner .borbibi_sidebar .borbibi_navigation__top .borbibi_navigation__top_inner .borbibi_navigation_buttons .borbibi_bordered_btn.borbibi_btn.active, .borbibi_navigation__top .borbibi_navigation__top_inner .borbibi_navigation_buttons .borbibi_signup_form .borbibi_signup_form_inner .borbibi_sidebar .borbibi_bordered_btn.borbibi_btn.active {
+          color: white; }
+          .borbibi_signup_form .borbibi_signup_form_inner .borbibi_sidebar .borbibi_bordered_btn:hover::before, .borbibi_signup_form .borbibi_signup_form_inner .borbibi_sidebar .borbibi_navigation__top .borbibi_navigation__top_inner .borbibi_navigation_buttons .borbibi_bordered_btn.borbibi_btn.active::before, .borbibi_navigation__top .borbibi_navigation__top_inner .borbibi_navigation_buttons .borbibi_signup_form .borbibi_signup_form_inner .borbibi_sidebar .borbibi_bordered_btn.borbibi_btn.active::before {
+            visibility: visible;
+            opacity: 1; }
+    .borbibi_signup_form .borbibi_signup_form_inner .borbibi_step_form .steps ul {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-flow: row;
+      align-items: flex-start;
+      padding-left: 0;
+      margin-top: -21px; }
+      .borbibi_signup_form .borbibi_signup_form_inner .borbibi_step_form .steps ul li {
+        max-width: 25%;
+        flex: 0 0 25%;
+        text-align: left;
+        position: relative; }
+        .borbibi_signup_form .borbibi_signup_form_inner .borbibi_step_form .steps ul li.done::after {
+          background: #f29393;
+          width: 183px; }
+        .borbibi_signup_form .borbibi_signup_form_inner .borbibi_step_form .steps ul li.done .number {
+          box-shadow: 0px 3px 4px 4px #f2f2f2; }
+          .borbibi_signup_form .borbibi_signup_form_inner .borbibi_step_form .steps ul li.done .number::before {
+            visibility: visible;
+            opacity: 1;
+            transform: scale(1); }
+          .borbibi_signup_form .borbibi_signup_form_inner .borbibi_step_form .steps ul li.done .number::after {
+            visibility: visible;
+            opacity: 1; }
+        .borbibi_signup_form .borbibi_signup_form_inner .borbibi_step_form .steps ul li:last-child::after {
+          display: none; }
+        .borbibi_signup_form .borbibi_signup_form_inner .borbibi_step_form .steps ul li:last-child::before {
+          display: none; }
+        .borbibi_signup_form .borbibi_signup_form_inner .borbibi_step_form .steps ul li::before {
+          content: "";
+          position: absolute;
+          left: 0;
+          top: 18px;
+          height: 4px;
+          width: 183px;
+          background: #f2f2f2;
+          transition: all 0.4s linear; }
+        .borbibi_signup_form .borbibi_signup_form_inner .borbibi_step_form .steps ul li::after {
+          content: "";
+          position: absolute;
+          left: 0;
+          top: 18px;
+          height: 4px;
+          width: 0px;
+          background: #f2f2f2;
+          transition: all 0.4s linear; }
+        .borbibi_signup_form .borbibi_signup_form_inner .borbibi_step_form .steps ul li a {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-flow: column;
+          text-align: left;
+          padding: 0 50px;
+          font-size: 16px;
+          color: #727272;
+          padding-left: 0;
+          align-items: flex-start; }
+          .borbibi_signup_form .borbibi_signup_form_inner .borbibi_step_form .steps ul li a .current-info {
+            display: none; }
+          .borbibi_signup_form .borbibi_signup_form_inner .borbibi_step_form .steps ul li a .number {
+            height: 40px;
+            width: 40px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0px 0px 0px 4px #f2f2f2;
+            border-radius: 50%;
+            color: #898989;
+            margin-bottom: 23px;
+            background: white;
+            position: relative;
+            z-index: 9; }
+            .borbibi_signup_form .borbibi_signup_form_inner .borbibi_step_form .steps ul li a .number::after {
+              content: "";
+              position: absolute;
+              left: 0;
+              top: 0;
+              height: 100%;
+              width: 100%;
+              background: #f17677;
+              background: -moz-linear-gradient(top, #f17677 0%, #ee2a4f 100%);
+              background: -webkit-linear-gradient(top, #f17677 0%, #ee2a4f 100%);
+              background: linear-gradient(to bottom, #f17677 0%, #ee2a4f 100%);
+              filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f17677', endColorstr='#ee2a4f',GradientType=0 );
+              box-shadow: 0px 7px 13px rgba(122, 12, 12, 0.27);
+              border-radius: 50%;
+              visibility: hidden;
+              opacity: 0; }
+            .borbibi_signup_form .borbibi_signup_form_inner .borbibi_step_form .steps ul li a .number::before {
+              position: absolute;
+              font-family: "FontAwesome";
+              content: "\f00c";
+              left: 10px;
+              top: 3px;
+              color: white;
+              font-size: 22px;
+              z-index: 9;
+              visibility: hidden;
+              opacity: 0;
+              transition: all 0.4s linear;
+              transform: scale(1.3); }
+    .borbibi_signup_form .borbibi_signup_form_inner .borbibi_step_form .content {
+      background: white;
+      padding: 40px 40px;
+      margin-right: 40px;
+      border-radius: 22px;
+      margin-top: 30px;
+      box-shadow: 0px 0px 25px rgba(158, 82, 82, 0.15); }
+      .borbibi_signup_form .borbibi_signup_form_inner .borbibi_step_form .content .title {
+        display: none; }
+      .borbibi_signup_form .borbibi_signup_form_inner .borbibi_step_form .content .form-group label {
+        font-size: 14px;
+        color: #46474f;
+        font-family: "Poppins"; }
+      .borbibi_signup_form .borbibi_signup_form_inner .borbibi_step_form .content .form-group .form-control {
+        line-height: 40px;
+        height: 40px;
+        border-radius: 30px;
+        border: 1px solid #ffd0d0;
+        padding-left: 15px; }
+        .borbibi_signup_form .borbibi_signup_form_inner .borbibi_step_form .content .form-group .form-control:focus {
+          outline: none;
+          box-shadow: none; }
+    .borbibi_signup_form .borbibi_signup_form_inner .borbibi_step_form .actions {
+      padding: 40px 40px;
+      margin-right: 40px; }
+      .borbibi_signup_form .borbibi_signup_form_inner .borbibi_step_form .actions ul {
+        padding-left: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-flow: row;
+        justify-content: flex-end; }
+        .borbibi_signup_form .borbibi_signup_form_inner .borbibi_step_form .actions ul li {
+          margin-left: 10px; }
+          .borbibi_signup_form .borbibi_signup_form_inner .borbibi_step_form .actions ul li a {
+            line-height: 40px;
+            height: 40px;
+            padding: 0 30px;
+            font-size: 16px;
+            box-shadow: 0 0 0 1px #ee2b50;
+            border-radius: 30px;
+            color: #f29393;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            z-index: 9;
+            transition: all 0.4s linear; }
+            .borbibi_signup_form .borbibi_signup_form_inner .borbibi_step_form .actions ul li a::before {
+              content: "";
+              position: absolute;
+              left: 0;
+              top: 0;
+              width: 100%;
+              height: 100%;
+              background: #f17677;
+              background: -moz-linear-gradient(top, #f17677 0%, #ee2a4f 100%);
+              background: -webkit-linear-gradient(top, #f17677 0%, #ee2a4f 100%);
+              background: linear-gradient(to bottom, #f17677 0%, #ee2a4f 100%);
+              filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f17677', endColorstr='#ee2a4f',GradientType=0 );
+              box-shadow: 0px 7px 13px rgba(122, 12, 12, 0.27);
+              border-radius: 30px;
+              transition: all 0.4s linear;
+              z-index: -1;
+              visibility: hidden;
+              opacity: 0; }
+            .borbibi_signup_form .borbibi_signup_form_inner .borbibi_step_form .actions ul li a:hover, .borbibi_signup_form .borbibi_signup_form_inner .borbibi_step_form .actions ul li .borbibi_navigation__top .borbibi_navigation__top_inner .borbibi_navigation_buttons a.borbibi_btn.active, .borbibi_navigation__top .borbibi_navigation__top_inner .borbibi_navigation_buttons .borbibi_signup_form .borbibi_signup_form_inner .borbibi_step_form .actions ul li a.borbibi_btn.active {
+              color: white; }
+              .borbibi_signup_form .borbibi_signup_form_inner .borbibi_step_form .actions ul li a:hover::before, .borbibi_signup_form .borbibi_signup_form_inner .borbibi_step_form .actions ul li .borbibi_navigation__top .borbibi_navigation__top_inner .borbibi_navigation_buttons a.borbibi_btn.active::before, .borbibi_navigation__top .borbibi_navigation__top_inner .borbibi_navigation_buttons .borbibi_signup_form .borbibi_signup_form_inner .borbibi_step_form .actions ul li a.borbibi_btn.active::before {
+                visibility: visible;
+                opacity: 1; }
+
+.borbibi_breadcrumb {
+  position: relative;
+  background: url(../images/breadcrumb-image.jpg) no-repeat;
+  background-size: cover;
+  margin: 0; }
+  .borbibi_breadcrumb .borbibi_navigation {
+    position: relative; }
+    .borbibi_breadcrumb .borbibi_navigation .borbibi_social_icon li a {
+      background: rgba(255, 255, 255, 0.4); }
+      .borbibi_breadcrumb .borbibi_navigation .borbibi_social_icon li a i {
+        color: white; }
+
+fieldset legend {
+  font-weight: 500;
+  font-size: 20px;
+  color: #9697a1;
+  margin-bottom: 25px; }
+
+fieldset .borbibi_field_group:not(:last-child) {
+  padding-bottom: 30px;
+  border-bottom: 1px solid #eff1f7;
+  margin-bottom: 30px; }
+
+fieldset .borbibi_field_group label {
+  font-size: 14px;
+  color: #46474f;
+  font-family: "Poppins"; }
+
+fieldset .borbibi_field_group .borbibi_group_field .group-label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: row;
+  justify-content: space-between; }
+
+fieldset .borbibi_field_group .borbibi_group_field .group-control {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: row;
+  border-radius: 30px;
+  border: 1px solid #ffd0d0; }
+  fieldset .borbibi_field_group .borbibi_group_field .group-control > span:last-child {
+    border-right: 0; }
+  fieldset .borbibi_field_group .borbibi_group_field .group-control .form-control, fieldset .borbibi_field_group .borbibi_group_field .group-control .select2-container--default {
+    flex: 0 0 50%;
+    max-width: 50%;
+    border-right: 1px solid #ffd0d0; }
+    fieldset .borbibi_field_group .borbibi_group_field .group-control .form-control .borbibi_signup .borbibi_signup__container .form-group .form-control, .borbibi_signup .borbibi_signup__container .form-group fieldset .borbibi_field_group .borbibi_group_field .group-control .form-control .form-control, fieldset .borbibi_field_group .borbibi_group_field .group-control .form-control .borbibi_banner__searchbox .borbibi_searchbox_content form .borbibi_searchbox_field .form-group.borbibi_age .select2-selection__rendered, .borbibi_banner__searchbox .borbibi_searchbox_content form .borbibi_searchbox_field .form-group.borbibi_age fieldset .borbibi_field_group .borbibi_group_field .group-control .form-control .select2-selection__rendered, fieldset .borbibi_field_group .borbibi_group_field .group-control .form-control .select2-selection__rendered, fieldset .borbibi_field_group .borbibi_group_field .group-control .select2-container--default .borbibi_signup .borbibi_signup__container .form-group .form-control, .borbibi_signup .borbibi_signup__container .form-group fieldset .borbibi_field_group .borbibi_group_field .group-control .select2-container--default .form-control, fieldset .borbibi_field_group .borbibi_group_field .group-control .select2-container--default .borbibi_banner__searchbox .borbibi_searchbox_content form .borbibi_searchbox_field .form-group.borbibi_age .select2-selection__rendered, .borbibi_banner__searchbox .borbibi_searchbox_content form .borbibi_searchbox_field .form-group.borbibi_age fieldset .borbibi_field_group .borbibi_group_field .group-control .select2-container--default .select2-selection__rendered, fieldset .borbibi_field_group .borbibi_group_field .group-control .select2-container--default .select2-selection__rendered {
+      border: none; }
+
+.borbibi_add_more {
+  color: #ff4f4f;
+  font-size: 14px;
+  font-style: italic;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  cursor: pointer; }
+  .borbibi_add_more i {
+    display: inline-block;
+    margin-right: 5px;
+    font-size: 16px;
+    color: #ff4f4f; }
+
+.borbibi_add_more_content {
+  position: relative; }
+  .borbibi_add_more_content .borbibi_remove_add_more {
+    position: absolute;
+    z-index: 9;
+    padding: 0;
+    background: transparent;
+    border: none;
+    right: -22px;
+    top: 40px; }
+    .borbibi_add_more_content .borbibi_remove_add_more i {
+      font-size: 16px;
+      color: #ff4f4f; }
+
+.borbibi_add_more_container {
+  border: 1px solid #eff1f7;
+  padding: 15px 15px; }
+
+/*------------------------------------------
+------------------------------------------*/
+/*------------------------------------------
+------------------------------------------*/
+/*------------------------------------------
+------------------------------------------*/
+/*------------------------------------------
+------------------------------------------*/
+/*------------------------------------------
+------------------------------------------*/
+/*------------------------------------------
+------------------------------------------*/
+/*------------------------------------------
+------------------------------------------*/

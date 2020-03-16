@@ -1,0 +1,148 @@
+.select2-selection__rendered {
+  line-height: 40px !important;
+}
+.borbibi_banner {
+    position: relative;
+  .borbibi_banner__carousel {
+    .borbibi_dots {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      bottom: 20px;
+      top: initial;
+      li {
+        border-color: $cff;
+        cursor: pointer;
+      }
+    }
+    .borbibi_banner__carousel_item {
+      position: relative;
+      &.slick-current {
+        .borbibi_banner__carousel_content {
+          * {
+            -webkit-animation-name: fadeInDown;
+            animation-name: fadeInDown;
+            -webkit-animation-duration: 2s;
+            animation-duration: 2s;
+            -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
+          }
+          h5 {
+            animation-delay: 0.1s;
+          }
+          h1 {
+            animation-delay: 0.2s;
+          }
+          p {
+            animation-delay: 0.3s;
+          }
+        }
+      }
+      &::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba($c0a, 0.6);
+      }
+      .borbibi_banner__carousel_content {
+        text-align: center;
+        height: calc(100vh + 70px);
+        @include flexDirection(column);
+        padding-bottom: 0px;
+
+        h5 {
+          color: $cff;
+          padding-bottom: 10px;
+        }
+        h1 {
+          color: $cff;
+          font-family: $play;
+          font-weight: $bold;
+          font-size: $fz50;
+          padding-bottom: 20px;
+        }
+        p {
+          color: $cff;
+        }
+      }
+    }
+  }
+  &__searchbox {
+    position: absolute;
+    bottom: 80px;
+    width: 100%;
+    .borbibi_searchbox_content {
+      border: 1px solid $cee2;
+      background: rgba($c0a, 0.4);
+      padding-left: 70px;
+      overflow: hidden;
+      border-radius: 100px;
+      form {
+        @include flexDirection(row);
+
+        //    flex-wrap: wrap;
+        .borbibi_searchbox_field {
+          flex: 0 0 20%;
+          max-width: 20%;
+          label {
+            color: $cff;
+          }
+          &:not(:last-child) {
+            margin-right: 12px;
+          }
+          &:last-child {
+            text-align: left;
+            background: white;
+            padding-top: 20px;
+            padding-bottom: 15px;
+            padding-right: 50px;
+            background: $cff;
+          }
+          a {
+            color: $cee2;
+            font-size: $fz14;
+            font-style: italic;
+            display: inline-block;
+            padding-left: 10px;
+          }
+          .form-group {
+            width: 100%;
+            &.borbibi_age {
+              @include flexDirection(row);
+              background: $cff;
+              border-radius: 46px;
+              .select2-selection__rendered {
+                @extend .select2-selection__rendered;
+              }
+              .borbibi_searchbox_age_devider {
+                color: $cf1;
+                height: 30px;
+                width: 30px;
+                @include inlineFlex;
+                font-size: $fz14;
+                background: $cece;
+                border-radius: 50%;
+              }
+            }
+            .select2-container {
+              width: 100% !important;
+              .select2-selection__rendered {
+                line-height: 40px !important;
+              }
+            }
+          }
+          .borbibi_btn {
+            padding: 0 20px;
+            border-top-left-radius: 0;
+            border-bottom-left-radius: 0;
+            font-weight: $light;
+            font-size: $fz14;
+          }
+        }
+      }
+    }
+  }
+}

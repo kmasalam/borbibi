@@ -1,0 +1,76 @@
+.borbibi_success_story {
+    position: relative;
+    // background: url(../images/success-bg.jpg) no-repeat;
+    background-size: cover;
+    @include borbibi_section__title($cff, $cffe, false);
+    margin-bottom: 0;
+    &__elements{
+        position: absolute;
+        opacity: .5;
+        &.elements_one{
+            left: 0;
+            top: 0;
+        }
+        &.elements_two{
+            right: 0;
+            bottom: 0;
+        }
+        &.elements_three{
+            right: 0;
+            top: 20px;
+            opacity: .1;
+        }
+    }
+  .borbibi_success_grid {
+    .borbibi_success_item {
+      margin-bottom: 30px;
+      &__inner {
+        position: relative;
+        .borbibi_success_item__inner__content {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          bottom: 0;
+          @include flexDirection(row);
+          align-items: flex-end;
+          justify-content: space-between;
+          padding: 15px;
+          background: -moz-linear-gradient(
+            top,
+            rgba(255, 255, 255, 0) 0%,
+            rgba(255, 255, 255, 0) 0%,
+            rgba(0, 0, 10, 1) 100%
+          );
+          background: -webkit-linear-gradient(
+            top,
+            rgba(255, 255, 255, 0) 0%,
+            rgba(255, 255, 255, 0) 0%,
+            rgba(0, 0, 10, 1) 100%
+          );
+          background: linear-gradient(
+            to bottom,
+            rgba(255, 255, 255, 0) 0%,
+            rgba(255, 255, 255, 0) 0%,
+            rgba(0, 0, 10, 1) 100%
+          );
+          filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#00000a',GradientType=0 );
+          .borbibi_success_item__inner__content_name{
+              a{
+                font-weight: $extralight;
+                color: $cff;
+              }
+          }
+          .borbibi_success_item__inner__content_info{
+              position: absolute;
+              top: 20px;
+              right: 20px;
+            p{
+                font-weight: $extralight;
+                color: $cff;
+            }
+          }
+        }
+      }
+    }
+  }
+}

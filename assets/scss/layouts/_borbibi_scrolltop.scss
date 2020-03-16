@@ -1,0 +1,22 @@
+.borbibi_scrolltop{
+    position: fixed;
+    right: 30px;
+    bottom: 70px;
+    z-index: 50;
+    border: 2px solid $cc18;
+    height: 40px;
+    padding: 10px 20px;
+    @include inlineFlex;
+    flex-flow: column;
+    cursor: pointer;
+    display: none;
+    color: $cc18;
+    align-items: center;
+    i{
+        position: absolute;
+        bottom: calc(100% + 0px);
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+}

@@ -30,16 +30,49 @@ ul, ol {
 
 .section_padding_top{
     padding-top: 130px;
+    @include respond-to(large){
+      padding-top: 70px;
+    }
+    
+      @include respond-to(mdm){
+        padding-top: 70px;
+      }
+      @include respond-to(allsmall){
+        padding-top: 70px;
+      }
 }
 .section_padding_bottom{
     padding-bottom: 130px;
+    @include respond-to(large){
+      padding-bottom: 70px;
+    }
+    @include respond-to(mdm){
+      padding-bottom: 70px;
+    }
+    @include respond-to(allsmall){
+      padding-bottom: 70px;
+    }
 }
 h5{
   font-size: $fz20;
 }
 h1{
   font-size: $fz45;
+  @include respond-to(allsmall){
+    font-size: 21px;
+    line-height: 34px !important;
+  }
 }
 h3{
   font-size: $fz28;
+  @include respond-to(large){
+    font-size: 22px;
+    line-height: 30px;
+  }
+  @include respond-to(mdm){
+    font-size: 20px;
+  }
+  @include respond-to(allsmall){
+    font-size: 18px;
+  }
 }

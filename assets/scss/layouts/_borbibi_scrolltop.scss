@@ -12,6 +12,15 @@
     display: none;
     color: $cc18;
     align-items: center;
+    @include respond-to(little){
+        width: 38px;
+        font-size: 13px;
+        text-align: center;
+        line-height: 27px;
+        right: 5px;
+        padding: 10px 0px;
+        height: initial;
+    }
     i{
         position: absolute;
         bottom: calc(100% + 0px);

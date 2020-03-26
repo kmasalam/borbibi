@@ -1,102 +1,193 @@
-.borbibi_navigation{
-    position: absolute;
+.borbibi_navigation {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 0;
+  z-index: 9;
+  padding: 20px 0;
+  &__top {
     width: 100%;
-    left: 0;
-    top: 0;
-    z-index: 9;
-    padding: 20px 0;
-    &__top{
-        width: 100%;
-        .borbibi_navigation__top_inner{
-            @include flexDirection(row);
-            justify-content: space-between;
-            .borbi_navigation_brand_logo{
-                @include flexDirection(row);
-                .borbibi_brand_logo{
-                    @include inlineFlex;
-                    margin-left: 25px;
-                    margin-right: 25px;
-                    height: 120px;
-                    width: 120px;
-                    &::before{
-                        @include animation("rotation 5s linear infinite");
-                    }
-                }
-            }
-            .borbibi_navigation_buttons{
-                a{
-                    @include inlineFlex;
-                    &:not(:last-child){
-                        margin-right: 20px;
-                    }
-                }
-                .borbibi_btn{
-                    border: 2px solid $cff;
-                    border-radius: 30px;
-                    padding: 6px 20px;
-                    font-size: $fz14;
-                    background: transparent;
-                    position: relative;
-                    z-index: 5;
-                    @include transition(.40s);
-                    &::before {
-                        content: "";
-                        position: absolute;
-                        left: 0;
-                        top: 0;
-                        height: 100%;
-                        width: 100%;
-                        border-radius: 30px;
-                        background: #f17677;
-                        background: -moz-linear-gradient(top, #f17677 0%, #ee2a4f 100%);
-                        background: -webkit-linear-gradient(top, #f17677 0%, #ee2a4f 100%);
-                        background: linear-gradient(to bottom, #f17677 0%, #ee2a4f 100%);
-                        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f17677', endColorstr='#ee2a4f',GradientType=0 );
-                        z-index: 0;
-                        visibility: hidden;
-                        opacity: 0;
-                        @include transition(.40s);
-                        z-index: -1;
-                      }
-                      &:hover{
-                        color: $cff;
-                        border-color: transparent;
-                        &::before{
-                            visibility: visible;
-                            opacity: 1;
-                        }
-                        i{
-                            color: $cff;
-                        }
-                    }
-                    &.active{
-                        @extend :hover;
-                    }
-                    i{
-                        display: inline-block;
-                        padding-right: 5px;
-                    }
-                }
-            }
+    .borbibi_navigation__top_inner {
+      @include flexDirection(row);
+      justify-content: space-between;
+      @include respond-to(little){
+        flex-wrap: wrap;
+      }
+      .borbibi_social_icon{
+          @include respond-to(little){
+              display: none;
+          }
+      }
+      .borbi_navigation_brand_logo {
+        @include flexDirection(row);
+        @include respond-to(little){
+            flex-flow: row;
+            width: 100%;
         }
+        > img {
+          width: 100px;
+          @include respond-to(allsmall) {
+            width: 45px;
+          }
+        }
+        .borbibi_brand_logo {
+          @include inlineFlex;
+          margin-left: 25px;
+          margin-right: 25px;
+          height: 120px;
+          width: 120px;
+          @include respond-to(large) {
+            height: 100px;
+            width: 100px;
+          }
+          @include respond-to(mdm) {
+            height: 100px;
+            width: 100px;
+            padding: 10px;
+          }
+          @include respond-to(allsmall) {
+            margin-left: 12px;
+            margin-right: 12px;
+            height: 80px;
+            width: 80px;
+            padding: 10px;
+          }
+          &::before {
+            @include animation("rotation 5s linear infinite");
+          }
+        }
+      }
+      .borbibi_navigation_buttons {
+          @include respond-to(little){
+            width: 100%;
+            text-align: center;
+          }
+        a {
+          @include inlineFlex;
+          &:not(:last-child) {
+            margin-right: 20px;
+            @include respond-to(mdm) {
+              margin-right: 10px;
+            }
+            @include respond-to(allsmall){
+                margin-right: 3px;
+            }
+            @include respond-to (little){
+                margin-right: 3px;
+              }
+          }
+        }
+        .borbibi_btn {
+          border: 2px solid $cff;
+          border-radius: 30px;
+          padding: 6px 20px;
+          font-size: $fz14;
+          background: transparent;
+          position: relative;
+          z-index: 5;
+          @include transition(0.4s);
+          @include respond-to(mdm) {
+            padding: 2px 13px;
+            font-size: 12px;
+          }
+          @include respond-to(allsmall){
+            padding: 0px 7px;
+            font-size: 10px;
+          }
+          @include respond-to (little){
+            line-height: 35px;
+            height: 35px;
+            margin-top: 15px;
+          }
+          
+          &::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0;
+            height: 100%;
+            width: 100%;
+            border-radius: 30px;
+            background: #f17677;
+            background: -moz-linear-gradient(top, #f17677 0%, #ee2a4f 100%);
+            background: -webkit-linear-gradient(top, #f17677 0%, #ee2a4f 100%);
+            background: linear-gradient(to bottom, #f17677 0%, #ee2a4f 100%);
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f17677', endColorstr='#ee2a4f',GradientType=0 );
+            z-index: 0;
+            visibility: hidden;
+            opacity: 0;
+            @include transition(0.4s);
+            z-index: -1;
+          }
+          &:hover {
+            color: $cff;
+            border-color: transparent;
+            &::before {
+              visibility: visible;
+              opacity: 1;
+            }
+            i {
+              color: $cff;
+            }
+          }
+          &.active {
+            @extend :hover;
+          }
+          i {
+            display: inline-block;
+            padding-right: 5px;
+          }
+        }
+      }
     }
-    &__bottom{
+  }
+  &__bottom {
+    width: 100%;
+    padding-top: 30px;
+    @include respond-to (little){
         width: 100%;
-        padding-top: 30px;
-       .borbibi_nav{
-        margin-right: 130px;
-           ul{
-                @include flexDirection(row);
-                li{
-                    &:not(:last-child){
-                        margin-right: 30px;
-                    }
-                    a{
-                        font-size: $fz16;
-                        color: $cff;
-                    }
-                }
-           }
-       }
+        padding-top: 16px;
     }
+    .borbibi_nav {
+      margin-right: 130px;
+      @include respond-to(little){
+        margin-right: 0;
+      }
+      @include respond-to(allsmall){
+        margin-right: 0;
+      }
+      ul {
+        @include flexDirection(row);
+        @include respond-to(allsmall){
+          padding-left: 0;
+          margin-left: 0;
+        }
+        @include respond-to(little){
+            margin-right: 0;
+            padding-left: 0;
+        }
+        li {
+          &:not(:last-child) {
+            margin-right: 30px;
+            @include respond-to (little){
+                margin-right: 22px;
+            }
+          }
+          a {
+            font-size: $fz16;
+            color: $cff;
+            @include respond-to(mdm) {
+              font-size: 12px;
+            }
+            @include respond-to(allsmall) {
+                font-size: 12px;
+              }
+              @include respond-to(little){
+                font-size: 10px;
+              }
+          }
+        }
+      }
+    }
+  }
 }

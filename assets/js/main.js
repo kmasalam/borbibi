@@ -29,7 +29,7 @@
             infinite: true,
             speed: 500,
             arrows: false,
-            autoplay: true,
+            autoplay: false,
             autoplaySpeed: 2000,
             slidesToShow: 3,
             cssEase: 'linear',
@@ -124,10 +124,28 @@
                         placeholder: selectlabel ? selectlabel : '',
                         allowClear: true
                     });
+                    
                 });
             }
         }
         BorBibiSelection();
+
+        
+       
+        // $('.borbibi_awesome_select').on('select2:open', function () {
+
+        //     if ( $('.select2-search input').is(':focus') ) {
+    
+        //         $('.select2-search input').prop('focus', false);
+    
+        //     } else {
+    
+        //         $('.select2-search input').prop('focus', true);
+    
+        //     }
+    
+        // })
+        
 
         var borbibi_parallax = $('.borbibi_parallax');
         if (borbibi_parallax.length > 0) {
@@ -212,6 +230,221 @@
            
         });
     });
+
+    // Borbibi Data Array
+    var EducationArray = [
+        {
+            id: 0,
+            text: 'Phd/ Doctorate'
+        },
+        {
+            id: 1,
+            text: 'Masters'
+        },
+        {
+            id: 2,
+            text: 'MBA'
+        },
+        {
+            id: 3,
+            text: 'Bachelor'
+        },
+        {
+            id: 4,
+            text: 'BBA'
+        }
+        ,
+        {
+            id: 5,
+            text: 'Diploma'
+        }
+        ,
+        {
+            id: 6,
+            text: 'HSC'
+        }
+        ,
+        {
+            id: 7,
+            text: 'SSC'
+        }
+        ,
+        {
+            id: 8,
+            text: 'Dakhil'
+        }
+        ,
+        {
+            id: 9,
+            text: 'Alim'
+        }
+        ,
+        {
+            id: 10,
+            text: 'Fajil'
+        }
+        ,
+        {
+            id: 11,
+            text: 'Kamil'
+        }
+    ];
+
+    var ProfessionArray = [
+        {
+            id: 0,
+            text: 'Accountant'
+        },
+        {
+            id: 1,
+            text: 'Advertising Professional'
+        },
+        {
+            id: 2,
+            text: 'Advocate'
+        },
+        {
+            id: 3,
+            text: 'Architect'
+        },
+        {
+            id: 4,
+            text: 'Banker'
+        }
+        ,
+        {
+            id: 5,
+            text: 'Barrister'
+        }
+        ,
+        {
+            id: 6,
+            text: 'BCS Cadre'
+        }
+        ,
+        {
+            id: 7,
+            text: 'Beautician'
+        }
+        ,
+        {
+            id: 8,
+            text: 'Business Person'
+        }
+        ,
+        {
+            id: 9,
+            text: 'Chartered Accountant'
+        }
+        ,
+        {
+            id: 10,
+            text: 'Computer Professional'
+        }
+        ,
+        {
+            id: 11,
+            text: 'Consultant'
+        }
+        ,
+        {
+            id: 12,
+            text: 'Contractor'
+        }
+        ,
+        {
+            id: 13,
+            text: 'Cost Accountant'
+        }
+        ,
+        {
+            id: 14,
+            text: 'Customer Support Professional'
+        }
+        ,
+        {
+            id: 14,
+            text: 'Defense Employee'
+        }
+        ,
+        {
+            id: 14,
+            text: 'Dentist'
+        }
+    ];
+    var FathersStatus = [
+        {
+            id: 0,
+            text: 'Retired'
+        },
+        {
+            id: 1,
+            text: 'Employed'
+        },
+        {
+            id: 2,
+            text: 'Business'
+        },
+        {
+            id: 3,
+            text: 'Professional'
+        },
+        {
+            id: 4,
+            text: 'Not Employed'
+        },
+        {
+            id: 5,
+            text: 'Passed Away'
+        },
+    ];
+    var MothersStatus = [
+        {
+            id: 0,
+            text: 'Homemaker'
+        },
+        {
+            id: 1,
+            text: 'Employed'
+        },
+        {
+            id: 2,
+            text: 'Business'
+        },
+        {
+            id: 3,
+            text: 'Professional'
+        },
+        {
+            id: 4,
+            text: 'Retired'
+        },
+        {
+            id: 5,
+            text: 'Homemaker'
+        },
+        {
+            id: 6,
+            text: 'Homemaker'
+        },
+        {
+            id: 7,
+            text: 'Homemaker'
+        },
+    ];
+    $(".MothersStatus").select2({
+        data: MothersStatus
+      });
+    $(".FathersStatus").select2({
+        data: FathersStatus
+      });
+    $(".EducationArray").select2({
+        data: EducationArray
+      })
+    $(".ProfessionArray").select2({
+        data: ProfessionArray
+      })
+      
     $(document).on('click','.borbibi_remove_add_more',function(e){
         e.preventDefault(); 
         var parentChild = $(this).parents('.borbibi_add_more_container').find('.borbibi_add_more_content').length,

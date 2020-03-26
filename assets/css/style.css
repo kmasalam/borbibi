@@ -52,18 +52,50 @@ h1, h2, h3, h4, h5, h6, p, .borbibi_app .borbibi_app_container .borbibi_app_cont
 
 .section_padding_top {
   padding-top: 130px; }
+  @media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .section_padding_top {
+      padding-top: 70px; } }
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+    .section_padding_top {
+      padding-top: 70px; } }
+  @media only screen and (max-width: 767px) {
+    .section_padding_top {
+      padding-top: 70px; } }
 
 .section_padding_bottom {
   padding-bottom: 130px; }
+  @media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .section_padding_bottom {
+      padding-bottom: 70px; } }
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+    .section_padding_bottom {
+      padding-bottom: 70px; } }
+  @media only screen and (max-width: 767px) {
+    .section_padding_bottom {
+      padding-bottom: 70px; } }
 
 h5 {
   font-size: 20px; }
 
 h1 {
   font-size: 45px; }
+  @media only screen and (max-width: 767px) {
+    h1 {
+      font-size: 21px;
+      line-height: 34px !important; } }
 
 h3 {
   font-size: 28px; }
+  @media only screen and (min-width: 992px) and (max-width: 1199px) {
+    h3 {
+      font-size: 22px;
+      line-height: 30px; } }
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+    h3 {
+      font-size: 20px; } }
+  @media only screen and (max-width: 767px) {
+    h3 {
+      font-size: 18px; } }
 
 .borbibi_btn {
   font-size: 17px;
@@ -81,6 +113,15 @@ h3 {
   box-shadow: 0px 7px 13px rgba(122, 12, 12, 0.27);
   border: none;
   margin-top: 30px; }
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+    .borbibi_btn {
+      padding: 0 70px; } }
+  @media only screen and (max-width: 575px) {
+    .borbibi_btn {
+      line-height: 40px;
+      height: 40px;
+      padding: 0 50px;
+      font-size: 14px; } }
 
 @-webkit-keyframes rotation {
   0% {
@@ -146,6 +187,9 @@ h3 {
   padding-left: 0; }
   .borbibi_social_icon li:not(:last-child) {
     margin-right: 14px; }
+    @media only screen and (max-width: 767px) {
+      .borbibi_social_icon li:not(:last-child) {
+        margin-right: 8px; } }
   .borbibi_social_icon li a {
     height: 45px;
     width: 45px;
@@ -156,12 +200,26 @@ h3 {
     border-radius: 50%;
     position: relative;
     z-index: 5; }
+    @media only screen and (min-width: 768px) and (max-width: 991px) {
+      .borbibi_social_icon li a {
+        height: 40px;
+        width: 40px; } }
+    @media only screen and (max-width: 767px) {
+      .borbibi_social_icon li a {
+        height: 35px;
+        width: 35px; } }
     .borbibi_social_icon li a i {
       font-size: 16px;
       color: #8f8f8f;
       position: relative;
       z-index: 5;
       transition: all 0.4s linear; }
+      @media only screen and (min-width: 768px) and (max-width: 991px) {
+        .borbibi_social_icon li a i {
+          font-size: 10px; } }
+      @media only screen and (max-width: 767px) {
+        .borbibi_social_icon li a i {
+          font-size: 12px; } }
     .borbibi_social_icon li a::before {
       content: "";
       position: absolute;
@@ -191,14 +249,38 @@ h3 {
 .borbibi_section__title {
   margin-bottom: 70px;
   text-align: center; }
+  @media only screen and (max-width: 767px) {
+    .borbibi_section__title {
+      margin-bottom: 40px; } }
   .borbibi_section__title h4 {
     color: #737373;
     margin-bottom: 10px; }
+    @media only screen and (min-width: 992px) and (max-width: 1199px) {
+      .borbibi_section__title h4 {
+        margin-top: 10px;
+        font-size: 20px; } }
+    @media only screen and (min-width: 768px) and (max-width: 991px) {
+      .borbibi_section__title h4 {
+        margin-top: 10px;
+        font-size: 16px; } }
+    @media only screen and (max-width: 767px) {
+      .borbibi_section__title h4 {
+        margin-top: 10px;
+        font-size: 16px; } }
   .borbibi_section__title h2 {
     color: #f17677;
     font-weight: 700;
     font-family: "Playfair Display";
     font-size: 45px; }
+    @media only screen and (min-width: 992px) and (max-width: 1199px) {
+      .borbibi_section__title h2 {
+        font-size: 36px; } }
+    @media only screen and (min-width: 768px) and (max-width: 991px) {
+      .borbibi_section__title h2 {
+        font-size: 24px; } }
+    @media only screen and (max-width: 767px) {
+      .borbibi_section__title h2 {
+        font-size: 20px; } }
 
 /*------------------------------------------
 ------------------------------------------*/
@@ -217,11 +299,20 @@ h3 {
       flex-flow: row;
       justify-content: space-between;
       padding: 20px; }
+      @media only screen and (min-width: 768px) and (max-width: 991px) {
+        .borbibi_highlighted_profile__carousel .highlighted_profile_item__content {
+          padding: 10px; } }
       .borbibi_highlighted_profile__carousel .highlighted_profile_item__content__name p, .borbibi_highlighted_profile__carousel .highlighted_profile_item__content__name .borbibi_app .borbibi_app_container .borbibi_app_container__content ul li, .borbibi_app .borbibi_app_container .borbibi_app_container__content ul .borbibi_highlighted_profile__carousel .highlighted_profile_item__content__name li {
         color: #2d2e32; }
+        @media only screen and (min-width: 768px) and (max-width: 991px) {
+          .borbibi_highlighted_profile__carousel .highlighted_profile_item__content__name p, .borbibi_highlighted_profile__carousel .highlighted_profile_item__content__name .borbibi_app .borbibi_app_container .borbibi_app_container__content ul li, .borbibi_app .borbibi_app_container .borbibi_app_container__content ul .borbibi_highlighted_profile__carousel .highlighted_profile_item__content__name li {
+            font-size: 12px; } }
       .borbibi_highlighted_profile__carousel .highlighted_profile_item__content__info {
         color: #707070;
         font-weight: 200; }
+        @media only screen and (min-width: 768px) and (max-width: 991px) {
+          .borbibi_highlighted_profile__carousel .highlighted_profile_item__content__info {
+            font-size: 12px; } }
 
 /*------------------------------------------
 ------------------------------------------*/
@@ -231,14 +322,38 @@ h3 {
   margin-bottom: 70px;
   text-align: center;
   margin-bottom: 0; }
+  @media only screen and (max-width: 767px) {
+    .borbibi_success_story {
+      margin-bottom: 40px; } }
   .borbibi_success_story h4 {
     color: #737373;
     margin-bottom: 10px; }
+    @media only screen and (min-width: 992px) and (max-width: 1199px) {
+      .borbibi_success_story h4 {
+        margin-top: 10px;
+        font-size: 20px; } }
+    @media only screen and (min-width: 768px) and (max-width: 991px) {
+      .borbibi_success_story h4 {
+        margin-top: 10px;
+        font-size: 16px; } }
+    @media only screen and (max-width: 767px) {
+      .borbibi_success_story h4 {
+        margin-top: 10px;
+        font-size: 16px; } }
   .borbibi_success_story h2 {
     color: #f17677;
     font-weight: 700;
     font-family: "Playfair Display";
     font-size: 45px; }
+    @media only screen and (min-width: 992px) and (max-width: 1199px) {
+      .borbibi_success_story h2 {
+        font-size: 36px; } }
+    @media only screen and (min-width: 768px) and (max-width: 991px) {
+      .borbibi_success_story h2 {
+        font-size: 24px; } }
+    @media only screen and (max-width: 767px) {
+      .borbibi_success_story h2 {
+        font-size: 20px; } }
   .borbibi_success_story h4 {
     color: #ffec83;
     margin-bottom: 10px; }
@@ -246,6 +361,12 @@ h3 {
     color: white;
     font-weight: 700;
     font-size: 45px; }
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+    .borbibi_success_story h2 {
+      font-size: 24px; } }
+  @media only screen and (max-width: 767px) {
+    .borbibi_success_story h2 {
+      font-size: 20px; } }
   .borbibi_success_story__elements {
     position: absolute;
     opacity: .5; }
@@ -282,6 +403,9 @@ h3 {
         .borbibi_success_story .borbibi_success_grid .borbibi_success_item__inner .borbibi_success_item__inner__content .borbibi_success_item__inner__content_name a {
           font-weight: 200;
           color: white; }
+          @media only screen and (min-width: 768px) and (max-width: 991px) {
+            .borbibi_success_story .borbibi_success_grid .borbibi_success_item__inner .borbibi_success_item__inner__content .borbibi_success_item__inner__content_name a {
+              font-size: 12px; } }
         .borbibi_success_story .borbibi_success_grid .borbibi_success_item__inner .borbibi_success_item__inner__content .borbibi_success_item__inner__content_info {
           position: absolute;
           top: 20px;
@@ -289,6 +413,9 @@ h3 {
           .borbibi_success_story .borbibi_success_grid .borbibi_success_item__inner .borbibi_success_item__inner__content .borbibi_success_item__inner__content_info p, .borbibi_success_story .borbibi_success_grid .borbibi_success_item__inner .borbibi_success_item__inner__content .borbibi_success_item__inner__content_info .borbibi_app .borbibi_app_container .borbibi_app_container__content ul li, .borbibi_app .borbibi_app_container .borbibi_app_container__content ul .borbibi_success_story .borbibi_success_grid .borbibi_success_item__inner .borbibi_success_item__inner__content .borbibi_success_item__inner__content_info li {
             font-weight: 200;
             color: white; }
+            @media only screen and (min-width: 768px) and (max-width: 991px) {
+              .borbibi_success_story .borbibi_success_grid .borbibi_success_item__inner .borbibi_success_item__inner__content .borbibi_success_item__inner__content_info p, .borbibi_success_story .borbibi_success_grid .borbibi_success_item__inner .borbibi_success_item__inner__content .borbibi_success_item__inner__content_info .borbibi_app .borbibi_app_container .borbibi_app_container__content ul li, .borbibi_app .borbibi_app_container .borbibi_app_container__content ul .borbibi_success_story .borbibi_success_grid .borbibi_success_item__inner .borbibi_success_item__inner__content .borbibi_success_item__inner__content_info li {
+                font-size: 12px; } }
 
 /*------------------------------------------
 ------------------------------------------*/
@@ -298,6 +425,13 @@ h3 {
     position: absolute;
     right: 10px;
     bottom: 14px; }
+
+.select2-selection__choice {
+  border-radius: 30px !important;
+  margin-top: 6px !important;
+  height: 36px;
+  line-height: 37px;
+  background: white !important; }
 
 .select2-selection {
   line-height: 40px !important;
@@ -321,8 +455,13 @@ h3 {
 .select2-container--default .select2-selection--single {
   border-radius: 46px !important; }
 
-.select2-selection__rendered, .borbibi_signup .borbibi_signup__container .form-group .form-control,
-.borbibi_signup .borbibi_signup__container .form-group .select2-selection__rendered, .borbibi_banner__searchbox .borbibi_searchbox_content form .borbibi_searchbox_field .form-group.borbibi_age .select2-selection__rendered, fieldset .borbibi_field_group .borbibi_group_field .group-control .form-control .select2-selection__rendered, fieldset .borbibi_field_group .borbibi_group_field .group-control .select2-container--default .select2-selection__rendered {
+.borbibi_file_uploader,
+.select2-selection__rendered,
+.borbibi_signup .borbibi_signup__container .form-group .form-control,
+.borbibi_signup .borbibi_signup__container .form-group .select2-selection__rendered,
+.borbibi_banner__searchbox .borbibi_searchbox_content form .borbibi_searchbox_field .form-group.borbibi_age .select2-selection__rendered,
+fieldset .borbibi_field_group .borbibi_group_field .group-control .form-control .select2-selection__rendered,
+fieldset .borbibi_field_group .borbibi_group_field .group-control .select2-container--default .select2-selection__rendered {
   border: 1px solid #ffd0d0;
   border-radius: 46px;
   position: relative;
@@ -332,14 +471,35 @@ h3 {
   height: 40px;
   line-height: 40px;
   padding: 0 0 0 15px;
-  border-radius: 46px !important; }
+  border-radius: 46px !important;
+  display: block; }
+
+.borbibi_file_uploader {
+  position: relative; }
+  .borbibi_file_uploader input {
+    height: 40px;
+    line-height: 34px;
+    border-radius: 30px;
+    opacity: 0;
+    width: 100%; }
+  .borbibi_file_uploader span {
+    background: #fbf7f8;
+    height: 100%;
+    width: 120px;
+    border-radius: 30px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding-left: 10px;
+    text-align: center; }
 
 .borbibi_aggrement_check {
-  margin-top: 20px; }
+  margin-top: 35px; }
   .borbibi_aggrement_check .borbibi_check {
     font-size: 14px;
     color: #808080;
     font-weight: 300;
+    display: flex;
     position: relative; }
     .borbibi_aggrement_check .borbibi_check input {
       height: 17px;
@@ -356,6 +516,13 @@ h3 {
         transform: scale(1); }
     .borbibi_aggrement_check .borbibi_check label {
       padding-left: 10px; }
+      @media only screen and (min-width: 768px) and (max-width: 991px) {
+        .borbibi_aggrement_check .borbibi_check label {
+          font-size: 12px; } }
+      @media only screen and (max-width: 575px) {
+        .borbibi_aggrement_check .borbibi_check label {
+          padding-left: 14px;
+          font-size: 11px; } }
       .borbibi_aggrement_check .borbibi_check label::before {
         content: "";
         position: absolute;
@@ -413,6 +580,9 @@ h3 {
     padding-bottom: 60px;
     position: relative;
     z-index: 9; }
+    @media only screen and (max-width: 767px) {
+      .borbibi_signup .borbibi_signup__container {
+        padding: 30px 20px 35px 20px; } }
     .borbibi_signup .borbibi_signup__container .form-group label {
       font-family: "Poppins";
       font-size: 14px;
@@ -434,6 +604,19 @@ h3 {
       padding-right: 30px;
       font-weight: 300;
       margin-bottom: 25px; }
+      @media only screen and (min-width: 768px) and (max-width: 991px) {
+        .borbibi_signup .borbibi_signup__container .borbibi_register_submit_area .borbibi_btn {
+          font-size: 14px;
+          padding-left: 20px;
+          padding-right: 20px;
+          margin-bottom: 15px; } }
+      @media only screen and (max-width: 767px) {
+        .borbibi_signup .borbibi_signup__container .borbibi_register_submit_area .borbibi_btn {
+          margin-bottom: 10px;
+          margin-top: 20px;
+          padding-left: 20px;
+          padding-right: 20px;
+          font-size: 13px; } }
     .borbibi_signup .borbibi_signup__container .borbibi_register_submit_area span {
       font-size: 16px;
       color: #f17677;
@@ -452,8 +635,29 @@ h3 {
         font-weight: 300;
         margin-top: 0px;
         background: #b2b2b2; }
+        @media only screen and (min-width: 768px) and (max-width: 991px) {
+          .borbibi_signup .borbibi_signup__container .borbibi_signup__container_social .borbibi_social_btn {
+            font-size: 14px;
+            padding: 0 30px; } }
+        @media only screen and (max-width: 767px) {
+          .borbibi_signup .borbibi_signup__container .borbibi_signup__container_social .borbibi_social_btn {
+            font-size: 14px;
+            padding: 0 30px; } }
+        @media only screen and (max-width: 575px) {
+          .borbibi_signup .borbibi_signup__container .borbibi_signup__container_social .borbibi_social_btn {
+            font-size: 10px;
+            padding: 0 9px; } }
         .borbibi_signup .borbibi_signup__container .borbibi_signup__container_social .borbibi_social_btn:not(:last-child) {
           margin-right: 30px; }
+          @media only screen and (min-width: 768px) and (max-width: 991px) {
+            .borbibi_signup .borbibi_signup__container .borbibi_signup__container_social .borbibi_social_btn:not(:last-child) {
+              margin-right: 20px; } }
+          @media only screen and (max-width: 767px) {
+            .borbibi_signup .borbibi_signup__container .borbibi_signup__container_social .borbibi_social_btn:not(:last-child) {
+              margin-right: 10px; } }
+          @media only screen and (max-width: 575px) {
+            .borbibi_signup .borbibi_signup__container .borbibi_signup__container_social .borbibi_social_btn:not(:last-child) {
+              margin-right: 5px; } }
         .borbibi_signup .borbibi_signup__container .borbibi_signup__container_social .borbibi_social_btn i {
           display: inline-block;
           padding-right: 7px; }
@@ -476,8 +680,13 @@ h3 {
 ------------------------------------------*/
 /*------------------------------------------
 ------------------------------------------*/
-.select2-selection__rendered, .borbibi_signup .borbibi_signup__container .form-group .form-control,
-.borbibi_signup .borbibi_signup__container .form-group .select2-selection__rendered, .borbibi_banner__searchbox .borbibi_searchbox_content form .borbibi_searchbox_field .form-group.borbibi_age .select2-selection__rendered, fieldset .borbibi_field_group .borbibi_group_field .group-control .form-control .select2-selection__rendered, fieldset .borbibi_field_group .borbibi_group_field .group-control .select2-container--default .select2-selection__rendered {
+
+.select2-selection__rendered,
+.borbibi_signup .borbibi_signup__container .form-group .form-control,
+.borbibi_signup .borbibi_signup__container .form-group .select2-selection__rendered,
+.borbibi_banner__searchbox .borbibi_searchbox_content form .borbibi_searchbox_field .form-group.borbibi_age .select2-selection__rendered,
+fieldset .borbibi_field_group .borbibi_group_field .group-control .form-control .select2-selection__rendered,
+fieldset .borbibi_field_group .borbibi_group_field .group-control .select2-container--default .select2-selection__rendered {
   line-height: 40px !important; }
 
 .borbibi_banner {
@@ -525,14 +734,32 @@ h3 {
       .borbibi_banner .borbibi_banner__carousel .borbibi_banner__carousel_item .borbibi_banner__carousel_content h5 {
         color: white;
         padding-bottom: 10px; }
+        @media only screen and (max-width: 767px) {
+          .borbibi_banner .borbibi_banner__carousel .borbibi_banner__carousel_item .borbibi_banner__carousel_content h5 {
+            font-size: 14px; } }
       .borbibi_banner .borbibi_banner__carousel .borbibi_banner__carousel_item .borbibi_banner__carousel_content h1 {
         color: white;
         font-family: "Playfair Display";
         font-weight: 700;
         font-size: 60px;
         padding-bottom: 20px; }
+        @media only screen and (min-width: 992px) and (max-width: 1199px) {
+          .borbibi_banner .borbibi_banner__carousel .borbibi_banner__carousel_item .borbibi_banner__carousel_content h1 {
+            font-size: 36px; } }
+        @media only screen and (min-width: 768px) and (max-width: 991px) {
+          .borbibi_banner .borbibi_banner__carousel .borbibi_banner__carousel_item .borbibi_banner__carousel_content h1 {
+            font-size: 30px; } }
+        @media only screen and (max-width: 767px) {
+          .borbibi_banner .borbibi_banner__carousel .borbibi_banner__carousel_item .borbibi_banner__carousel_content h1 {
+            font-size: 24px; } }
       .borbibi_banner .borbibi_banner__carousel .borbibi_banner__carousel_item .borbibi_banner__carousel_content p, .borbibi_banner .borbibi_banner__carousel .borbibi_banner__carousel_item .borbibi_banner__carousel_content .borbibi_app .borbibi_app_container .borbibi_app_container__content ul li, .borbibi_app .borbibi_app_container .borbibi_app_container__content ul .borbibi_banner .borbibi_banner__carousel .borbibi_banner__carousel_item .borbibi_banner__carousel_content li {
         color: white; }
+        @media only screen and (min-width: 768px) and (max-width: 991px) {
+          .borbibi_banner .borbibi_banner__carousel .borbibi_banner__carousel_item .borbibi_banner__carousel_content p, .borbibi_banner .borbibi_banner__carousel .borbibi_banner__carousel_item .borbibi_banner__carousel_content .borbibi_app .borbibi_app_container .borbibi_app_container__content ul li, .borbibi_app .borbibi_app_container .borbibi_app_container__content ul .borbibi_banner .borbibi_banner__carousel .borbibi_banner__carousel_item .borbibi_banner__carousel_content li {
+            font-size: 14px; } }
+        @media only screen and (max-width: 767px) {
+          .borbibi_banner .borbibi_banner__carousel .borbibi_banner__carousel_item .borbibi_banner__carousel_content p, .borbibi_banner .borbibi_banner__carousel .borbibi_banner__carousel_item .borbibi_banner__carousel_content .borbibi_app .borbibi_app_container .borbibi_app_container__content ul li, .borbibi_app .borbibi_app_container .borbibi_app_container__content ul .borbibi_banner .borbibi_banner__carousel .borbibi_banner__carousel_item .borbibi_banner__carousel_content li {
+            font-size: 12px; } }
   .borbibi_banner__searchbox {
     position: absolute;
     bottom: 80px;
@@ -543,18 +770,58 @@ h3 {
       padding-left: 70px;
       overflow: hidden;
       border-radius: 100px; }
+      @media only screen and (min-width: 768px) and (max-width: 991px) {
+        .borbibi_banner__searchbox .borbibi_searchbox_content {
+          padding-left: 45px; } }
+      @media only screen and (max-width: 767px) {
+        .borbibi_banner__searchbox .borbibi_searchbox_content {
+          padding-left: 23px;
+          border-radius: 40px; } }
+      @media only screen and (max-width: 575px) {
+        .borbibi_banner__searchbox .borbibi_searchbox_content {
+          padding-left: 16px;
+          border-radius: 40px;
+          padding-bottom: 20px;
+          padding-top: 24px;
+          background: rgba(0, 0, 10, 0.8); } }
       .borbibi_banner__searchbox .borbibi_searchbox_content form {
         display: flex;
         align-items: center;
         justify-content: center;
         flex-flow: row; }
+        @media only screen and (max-width: 575px) {
+          .borbibi_banner__searchbox .borbibi_searchbox_content form {
+            flex-flow: row;
+            flex-wrap: wrap; } }
         .borbibi_banner__searchbox .borbibi_searchbox_content form .borbibi_searchbox_field {
           flex: 0 0 20%;
           max-width: 20%; }
+          @media only screen and (max-width: 575px) {
+            .borbibi_banner__searchbox .borbibi_searchbox_content form .borbibi_searchbox_field {
+              flex: 0 0 46%;
+              max-width: 46%; } }
           .borbibi_banner__searchbox .borbibi_searchbox_content form .borbibi_searchbox_field label {
             color: white; }
+            @media only screen and (min-width: 992px) and (max-width: 1199px) {
+              .borbibi_banner__searchbox .borbibi_searchbox_content form .borbibi_searchbox_field label {
+                font-size: 12px; } }
+            @media only screen and (min-width: 768px) and (max-width: 991px) {
+              .borbibi_banner__searchbox .borbibi_searchbox_content form .borbibi_searchbox_field label {
+                font-size: 12px; } }
+            @media only screen and (max-width: 767px) {
+              .borbibi_banner__searchbox .borbibi_searchbox_content form .borbibi_searchbox_field label {
+                font-size: 10px; } }
+            @media only screen and (max-width: 575px) {
+              .borbibi_banner__searchbox .borbibi_searchbox_content form .borbibi_searchbox_field label {
+                font-size: 10px; } }
           .borbibi_banner__searchbox .borbibi_searchbox_content form .borbibi_searchbox_field:not(:last-child) {
             margin-right: 12px; }
+            @media only screen and (max-width: 767px) {
+              .borbibi_banner__searchbox .borbibi_searchbox_content form .borbibi_searchbox_field:not(:last-child) {
+                margin-right: 5px; } }
+            @media only screen and (max-width: 575px) {
+              .borbibi_banner__searchbox .borbibi_searchbox_content form .borbibi_searchbox_field:not(:last-child) {
+                margin-right: 10px; } }
           .borbibi_banner__searchbox .borbibi_searchbox_content form .borbibi_searchbox_field:last-child {
             text-align: left;
             background: white;
@@ -562,12 +829,37 @@ h3 {
             padding-bottom: 15px;
             padding-right: 50px;
             background: white; }
+            @media only screen and (min-width: 768px) and (max-width: 991px) {
+              .borbibi_banner__searchbox .borbibi_searchbox_content form .borbibi_searchbox_field:last-child {
+                padding-top: 13px;
+                padding-bottom: 9px;
+                padding-right: 35px; } }
+            @media only screen and (max-width: 767px) {
+              .borbibi_banner__searchbox .borbibi_searchbox_content form .borbibi_searchbox_field:last-child {
+                padding-right: 19px; } }
+            @media only screen and (max-width: 575px) {
+              .borbibi_banner__searchbox .borbibi_searchbox_content form .borbibi_searchbox_field:last-child {
+                padding-right: 13px;
+                margin-left: 0px;
+                margin-right: 0;
+                max-width: 83%;
+                flex: 0 0 83%;
+                flex-flow: column;
+                align-items: center;
+                justify-content: center;
+                display: flex;
+                border-radius: 30px;
+                padding-top: 0;
+                padding-bottom: 0; } }
           .borbibi_banner__searchbox .borbibi_searchbox_content form .borbibi_searchbox_field a {
             color: #ee2a4f;
             font-size: 14px;
             font-style: italic;
             display: inline-block;
             padding-left: 10px; }
+            @media only screen and (max-width: 767px) {
+              .borbibi_banner__searchbox .borbibi_searchbox_content form .borbibi_searchbox_field a {
+                font-size: 12px; } }
           .borbibi_banner__searchbox .borbibi_searchbox_content form .borbibi_searchbox_field .form-group {
             width: 100%; }
             .borbibi_banner__searchbox .borbibi_searchbox_content form .borbibi_searchbox_field .form-group.borbibi_age {
@@ -597,6 +889,25 @@ h3 {
             border-bottom-left-radius: 0;
             font-weight: 300;
             font-size: 14px; }
+            @media only screen and (min-width: 992px) and (max-width: 1199px) {
+              .borbibi_banner__searchbox .borbibi_searchbox_content form .borbibi_searchbox_field .borbibi_btn {
+                margin-top: 13px; } }
+            @media only screen and (min-width: 768px) and (max-width: 991px) {
+              .borbibi_banner__searchbox .borbibi_searchbox_content form .borbibi_searchbox_field .borbibi_btn {
+                padding: 0 10px; } }
+            @media only screen and (max-width: 767px) {
+              .borbibi_banner__searchbox .borbibi_searchbox_content form .borbibi_searchbox_field .borbibi_btn {
+                padding: 0 12px;
+                font-size: 12px; } }
+            @media only screen and (max-width: 575px) {
+              .borbibi_banner__searchbox .borbibi_searchbox_content form .borbibi_searchbox_field .borbibi_btn {
+                padding: 0 12px;
+                font-size: 12px;
+                line-height: 35px;
+                height: 35px;
+                margin-top: 15px;
+                border-top-left-radius: 30px;
+                border-bottom-left-radius: 30px; } }
 
 /*------------------------------------------
 ------------------------------------------*/
@@ -609,6 +920,16 @@ h3 {
   background: white;
   border-radius: 50%;
   position: relative; }
+  @media only screen and (max-width: 767px) {
+    .borbibi_brand_logo, .borbibi_footer__top .borbibi_footer__top_inner .borbibi_brand_logo {
+      height: 85px;
+      width: 85px;
+      padding: 10px; } }
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+    .borbibi_brand_logo, .borbibi_footer__top .borbibi_footer__top_inner .borbibi_brand_logo {
+      height: 120px;
+      width: 120px;
+      padding: 15px; } }
   .borbibi_brand_logo::before, .borbibi_footer__top .borbibi_footer__top_inner .borbibi_brand_logo::before {
     content: "";
     position: absolute;
@@ -627,12 +948,27 @@ h3 {
 .borbibi_footer {
   position: relative; }
   .borbibi_footer__top {
+    position: relative;
     padding-top: 125px; }
+    @media only screen and (min-width: 768px) and (max-width: 991px) {
+      .borbibi_footer__top {
+        padding-top: 25px; } }
+    @media only screen and (max-width: 767px) {
+      .borbibi_footer__top {
+        padding-top: 32px; } }
     .borbibi_footer__top .borbibi_footer_shape {
       position: absolute;
       left: 0;
       width: 100%;
-      top: 0; }
+      bottom: 0; }
+      @media only screen and (min-width: 768px) and (max-width: 991px) {
+        .borbibi_footer__top .borbibi_footer_shape {
+          bottom: -4px;
+          height: 250px; } }
+      @media only screen and (max-width: 767px) {
+        .borbibi_footer__top .borbibi_footer_shape {
+          bottom: 0;
+          height: 154px; } }
     .borbibi_footer__top .borbibi_footer__top_inner {
       text-align: center;
       display: flex;
@@ -641,6 +977,12 @@ h3 {
       flex-flow: row; }
       .borbibi_footer__top .borbibi_footer__top_inner a:not(:last-child) {
         margin-right: 40px; }
+        @media only screen and (max-width: 767px) {
+          .borbibi_footer__top .borbibi_footer__top_inner a:not(:last-child) {
+            margin-right: 25px; } }
+        @media only screen and (max-width: 575px) {
+          .borbibi_footer__top .borbibi_footer__top_inner a:not(:last-child) {
+            margin-right: 14px; } }
       .borbibi_footer__top .borbibi_footer__top_inner .borbibi_support, .borbibi_footer__top .borbibi_footer__top_inner .borbibi_help_line {
         background: #2d2d32;
         color: white;
@@ -655,9 +997,20 @@ h3 {
         transition: all 0.4s linear;
         position: relative;
         z-index: 9; }
+        @media only screen and (max-width: 767px) {
+          .borbibi_footer__top .borbibi_footer__top_inner .borbibi_support, .borbibi_footer__top .borbibi_footer__top_inner .borbibi_help_line {
+            padding: 8px 23px;
+            font-size: 12px; } }
+        @media only screen and (max-width: 575px) {
+          .borbibi_footer__top .borbibi_footer__top_inner .borbibi_support, .borbibi_footer__top .borbibi_footer__top_inner .borbibi_help_line {
+            padding: 8px 5px;
+            font-size: 8px; } }
         .borbibi_footer__top .borbibi_footer__top_inner .borbibi_support i, .borbibi_footer__top .borbibi_footer__top_inner .borbibi_help_line i {
           display: inline-block;
           padding-right: 10px; }
+          @media only screen and (max-width: 575px) {
+            .borbibi_footer__top .borbibi_footer__top_inner .borbibi_support i, .borbibi_footer__top .borbibi_footer__top_inner .borbibi_help_line i {
+              padding-right: 2px; } }
         .borbibi_footer__top .borbibi_footer__top_inner .borbibi_support:before, .borbibi_footer__top .borbibi_footer__top_inner .borbibi_help_line:before {
           content: "";
           position: absolute;
@@ -678,6 +1031,10 @@ h3 {
     background: #212126;
     padding-bottom: 60px;
     text-align: center; }
+    @media only screen and (max-width: 767px) {
+      .borbibi_footer__middle {
+        padding-top: 16px;
+        padding-bottom: 30px; } }
     .borbibi_footer__middle .borbibi_footer_menu ul {
       padding-left: 0;
       margin-bottom: 0;
@@ -686,12 +1043,33 @@ h3 {
       justify-content: center;
       flex-flow: row;
       margin-top: 30px; }
+      @media only screen and (max-width: 767px) {
+        .borbibi_footer__middle .borbibi_footer_menu ul {
+          margin-top: 20px; } }
+      @media only screen and (max-width: 575px) {
+        .borbibi_footer__middle .borbibi_footer_menu ul {
+          flex-wrap: wrap; } }
+      @media only screen and (max-width: 575px) {
+        .borbibi_footer__middle .borbibi_footer_menu ul li {
+          flex: 0 0 33.33%; } }
       .borbibi_footer__middle .borbibi_footer_menu ul li:not(:last-child) {
         margin-right: 25px; }
+        @media only screen and (min-width: 768px) and (max-width: 991px) {
+          .borbibi_footer__middle .borbibi_footer_menu ul li:not(:last-child) {
+            margin-right: 15px; } }
+        @media only screen and (max-width: 767px) {
+          .borbibi_footer__middle .borbibi_footer_menu ul li:not(:last-child) {
+            margin-right: 10px; } }
       .borbibi_footer__middle .borbibi_footer_menu ul li a {
         color: white;
         font-size: 14px;
         transition: all 0.4s linear; }
+        @media only screen and (min-width: 768px) and (max-width: 991px) {
+          .borbibi_footer__middle .borbibi_footer_menu ul li a {
+            font-size: 12px; } }
+        @media only screen and (max-width: 767px) {
+          .borbibi_footer__middle .borbibi_footer_menu ul li a {
+            font-size: 10px; } }
         .borbibi_footer__middle .borbibi_footer_menu ul li a:hover, .borbibi_footer__middle .borbibi_footer_menu ul li .borbibi_navigation__top .borbibi_navigation__top_inner .borbibi_navigation_buttons a.borbibi_btn.active, .borbibi_navigation__top .borbibi_navigation__top_inner .borbibi_navigation_buttons .borbibi_footer__middle .borbibi_footer_menu ul li a.borbibi_btn.active {
           color: #c18b4d; }
   .borbibi_footer__bottom {
@@ -699,11 +1077,17 @@ h3 {
     padding: 22px 0;
     border-top: 1px solid #1b1b1f;
     text-align: center; }
+    @media only screen and (max-width: 767px) {
+      .borbibi_footer__bottom {
+        padding: 10px 0; } }
     .borbibi_footer__bottom .borbibi_copyright_text {
       font-size: 14px;
       color: #c18b4d;
       text-align: center;
       text-transform: uppercase; }
+      @media only screen and (max-width: 767px) {
+        .borbibi_footer__bottom .borbibi_copyright_text {
+          font-size: 10px; } }
 
 /*------------------------------------------
 ------------------------------------------*/
@@ -722,11 +1106,26 @@ h3 {
       justify-content: center;
       flex-flow: row;
       justify-content: space-between; }
+      @media only screen and (max-width: 575px) {
+        .borbibi_navigation__top .borbibi_navigation__top_inner {
+          flex-wrap: wrap; } }
+      @media only screen and (max-width: 575px) {
+        .borbibi_navigation__top .borbibi_navigation__top_inner .borbibi_social_icon {
+          display: none; } }
       .borbibi_navigation__top .borbibi_navigation__top_inner .borbi_navigation_brand_logo {
         display: flex;
         align-items: center;
         justify-content: center;
         flex-flow: row; }
+        @media only screen and (max-width: 575px) {
+          .borbibi_navigation__top .borbibi_navigation__top_inner .borbi_navigation_brand_logo {
+            flex-flow: row;
+            width: 100%; } }
+        .borbibi_navigation__top .borbibi_navigation__top_inner .borbi_navigation_brand_logo > img {
+          width: 100px; }
+          @media only screen and (max-width: 767px) {
+            .borbibi_navigation__top .borbibi_navigation__top_inner .borbi_navigation_brand_logo > img {
+              width: 45px; } }
         .borbibi_navigation__top .borbibi_navigation__top_inner .borbi_navigation_brand_logo .borbibi_brand_logo {
           display: inline-flex;
           align-items: center;
@@ -735,18 +1134,47 @@ h3 {
           margin-right: 25px;
           height: 120px;
           width: 120px; }
+          @media only screen and (min-width: 992px) and (max-width: 1199px) {
+            .borbibi_navigation__top .borbibi_navigation__top_inner .borbi_navigation_brand_logo .borbibi_brand_logo {
+              height: 100px;
+              width: 100px; } }
+          @media only screen and (min-width: 768px) and (max-width: 991px) {
+            .borbibi_navigation__top .borbibi_navigation__top_inner .borbi_navigation_brand_logo .borbibi_brand_logo {
+              height: 100px;
+              width: 100px;
+              padding: 10px; } }
+          @media only screen and (max-width: 767px) {
+            .borbibi_navigation__top .borbibi_navigation__top_inner .borbi_navigation_brand_logo .borbibi_brand_logo {
+              margin-left: 12px;
+              margin-right: 12px;
+              height: 80px;
+              width: 80px;
+              padding: 10px; } }
           .borbibi_navigation__top .borbibi_navigation__top_inner .borbi_navigation_brand_logo .borbibi_brand_logo::before {
             -webkit-animation: rotation 5s linear infinite;
             -moz-animation: rotation 5s linear infinite;
             -ms-animation: rotation 5s linear infinite;
             -o-animation: rotation 5s linear infinite;
             animation: rotation 5s linear infinite; }
+      @media only screen and (max-width: 575px) {
+        .borbibi_navigation__top .borbibi_navigation__top_inner .borbibi_navigation_buttons {
+          width: 100%;
+          text-align: center; } }
       .borbibi_navigation__top .borbibi_navigation__top_inner .borbibi_navigation_buttons a {
         display: inline-flex;
         align-items: center;
         justify-content: center; }
         .borbibi_navigation__top .borbibi_navigation__top_inner .borbibi_navigation_buttons a:not(:last-child) {
           margin-right: 20px; }
+          @media only screen and (min-width: 768px) and (max-width: 991px) {
+            .borbibi_navigation__top .borbibi_navigation__top_inner .borbibi_navigation_buttons a:not(:last-child) {
+              margin-right: 10px; } }
+          @media only screen and (max-width: 767px) {
+            .borbibi_navigation__top .borbibi_navigation__top_inner .borbibi_navigation_buttons a:not(:last-child) {
+              margin-right: 3px; } }
+          @media only screen and (max-width: 575px) {
+            .borbibi_navigation__top .borbibi_navigation__top_inner .borbibi_navigation_buttons a:not(:last-child) {
+              margin-right: 3px; } }
       .borbibi_navigation__top .borbibi_navigation__top_inner .borbibi_navigation_buttons .borbibi_btn {
         border: 2px solid white;
         border-radius: 30px;
@@ -756,6 +1184,19 @@ h3 {
         position: relative;
         z-index: 5;
         transition: all 0.4s linear; }
+        @media only screen and (min-width: 768px) and (max-width: 991px) {
+          .borbibi_navigation__top .borbibi_navigation__top_inner .borbibi_navigation_buttons .borbibi_btn {
+            padding: 2px 13px;
+            font-size: 12px; } }
+        @media only screen and (max-width: 767px) {
+          .borbibi_navigation__top .borbibi_navigation__top_inner .borbibi_navigation_buttons .borbibi_btn {
+            padding: 0px 7px;
+            font-size: 10px; } }
+        @media only screen and (max-width: 575px) {
+          .borbibi_navigation__top .borbibi_navigation__top_inner .borbibi_navigation_buttons .borbibi_btn {
+            line-height: 35px;
+            height: 35px;
+            margin-top: 15px; } }
         .borbibi_navigation__top .borbibi_navigation__top_inner .borbibi_navigation_buttons .borbibi_btn::before {
           content: "";
           position: absolute;
@@ -788,24 +1229,58 @@ h3 {
   .borbibi_navigation__bottom {
     width: 100%;
     padding-top: 30px; }
+    @media only screen and (max-width: 575px) {
+      .borbibi_navigation__bottom {
+        width: 100%;
+        padding-top: 16px; } }
     .borbibi_navigation__bottom .borbibi_nav {
       margin-right: 130px; }
+      @media only screen and (max-width: 575px) {
+        .borbibi_navigation__bottom .borbibi_nav {
+          margin-right: 0; } }
+      @media only screen and (max-width: 767px) {
+        .borbibi_navigation__bottom .borbibi_nav {
+          margin-right: 0; } }
       .borbibi_navigation__bottom .borbibi_nav ul {
         display: flex;
         align-items: center;
         justify-content: center;
         flex-flow: row; }
+        @media only screen and (max-width: 767px) {
+          .borbibi_navigation__bottom .borbibi_nav ul {
+            padding-left: 0;
+            margin-left: 0; } }
+        @media only screen and (max-width: 575px) {
+          .borbibi_navigation__bottom .borbibi_nav ul {
+            margin-right: 0;
+            padding-left: 0; } }
         .borbibi_navigation__bottom .borbibi_nav ul li:not(:last-child) {
           margin-right: 30px; }
+          @media only screen and (max-width: 575px) {
+            .borbibi_navigation__bottom .borbibi_nav ul li:not(:last-child) {
+              margin-right: 22px; } }
         .borbibi_navigation__bottom .borbibi_nav ul li a {
           font-size: 16px;
           color: white; }
+          @media only screen and (min-width: 768px) and (max-width: 991px) {
+            .borbibi_navigation__bottom .borbibi_nav ul li a {
+              font-size: 12px; } }
+          @media only screen and (max-width: 767px) {
+            .borbibi_navigation__bottom .borbibi_nav ul li a {
+              font-size: 12px; } }
+          @media only screen and (max-width: 575px) {
+            .borbibi_navigation__bottom .borbibi_nav ul li a {
+              font-size: 10px; } }
 
 /*------------------------------------------
 ------------------------------------------*/
 .borbibi_app {
   padding-top: 150px;
   padding-bottom: 150px; }
+  @media only screen and (max-width: 767px) {
+    .borbibi_app {
+      padding-top: 45px;
+      padding-bottom: 75px; } }
   .borbibi_app .borbibi_app_container {
     background: url(../images/borbibi-apps-background.jpg) no-repeat;
     background-size: cover;
@@ -826,18 +1301,60 @@ h3 {
       left: 80px;
       top: 50%;
       transform: translateY(-50%); }
+      @media only screen and (min-width: 768px) and (max-width: 991px) {
+        .borbibi_app .borbibi_app_container .borbibi_app_image {
+          left: -3px;
+          width: 34%; } }
+      @media only screen and (max-width: 767px) {
+        .borbibi_app .borbibi_app_container .borbibi_app_image {
+          left: 24px;
+          width: 154px;
+          border-radius: 18px; } }
+      @media only screen and (max-width: 575px) {
+        .borbibi_app .borbibi_app_container .borbibi_app_image {
+          display: none; } }
       .borbibi_app .borbibi_app_container .borbibi_app_image img {
         border-radius: 16px; }
+    @media only screen and (min-width: 992px) and (max-width: 1199px) {
+      .borbibi_app .borbibi_app_container .borbibi_app_container__content {
+        margin-left: 50px; } }
+    @media only screen and (min-width: 768px) and (max-width: 991px) {
+      .borbibi_app .borbibi_app_container .borbibi_app_container__content {
+        margin-left: 50px;
+        padding-right: 30px; } }
+    @media only screen and (max-width: 767px) {
+      .borbibi_app .borbibi_app_container .borbibi_app_container__content {
+        margin-left: 200px; } }
+    @media only screen and (max-width: 575px) {
+      .borbibi_app .borbibi_app_container .borbibi_app_container__content {
+        text-align: center;
+        margin-left: 0; } }
     .borbibi_app .borbibi_app_container .borbibi_app_container__content h1 {
       font-size: 45px;
       color: white;
       font-family: "Playfair Display";
       margin-bottom: 15px; }
+      @media only screen and (min-width: 992px) and (max-width: 1199px) {
+        .borbibi_app .borbibi_app_container .borbibi_app_container__content h1 {
+          font-size: 34px; } }
+      @media only screen and (min-width: 768px) and (max-width: 991px) {
+        .borbibi_app .borbibi_app_container .borbibi_app_container__content h1 {
+          font-size: 28px; } }
+      @media only screen and (max-width: 767px) {
+        .borbibi_app .borbibi_app_container .borbibi_app_container__content h1 {
+          font-size: 27px;
+          margin-bottom: 15px; } }
+      @media only screen and (max-width: 575px) {
+        .borbibi_app .borbibi_app_container .borbibi_app_container__content h1 {
+          font-size: 18px; } }
     .borbibi_app .borbibi_app_container .borbibi_app_container__content p, .borbibi_app .borbibi_app_container .borbibi_app_container__content ul li {
       font-size: 16px;
       color: white;
       font-weight: 300;
       margin-bottom: 15px; }
+      @media only screen and (max-width: 767px) {
+        .borbibi_app .borbibi_app_container .borbibi_app_container__content p, .borbibi_app .borbibi_app_container .borbibi_app_container__content ul li {
+          font-size: 12px; } }
     .borbibi_app .borbibi_app_container .borbibi_app_container__content ul {
       display: flex;
       align-items: center;
@@ -846,6 +1363,15 @@ h3 {
       justify-content: flex-start;
       padding-left: 0;
       margin-bottom: 30px; }
+      @media only screen and (min-width: 768px) and (max-width: 991px) {
+        .borbibi_app .borbibi_app_container .borbibi_app_container__content ul {
+          margin-bottom: 10px; } }
+      @media only screen and (max-width: 767px) {
+        .borbibi_app .borbibi_app_container .borbibi_app_container__content ul {
+          margin-bottom: 10px; } }
+      @media only screen and (max-width: 575px) {
+        .borbibi_app .borbibi_app_container .borbibi_app_container__content ul {
+          justify-self: center !important; } }
       .borbibi_app .borbibi_app_container .borbibi_app_container__content ul li {
         margin-bottom: 0;
         position: relative; }
@@ -865,6 +1391,9 @@ h3 {
       color: white;
       font-weight: 300;
       margin-bottom: 15px; }
+      @media only screen and (max-width: 767px) {
+        .borbibi_app .borbibi_app_container .borbibi_app_container__content p, .borbibi_app .borbibi_app_container .borbibi_app_container__content ul li {
+          font-size: 12px; } }
     .borbibi_app .borbibi_app_container .borbibi_app_container__content a {
       display: inline-flex;
       align-items: center;
@@ -872,6 +1401,9 @@ h3 {
       margin-top: 10px; }
       .borbibi_app .borbibi_app_container .borbibi_app_container__content a img {
         border-radius: 12px; }
+        @media only screen and (max-width: 767px) {
+          .borbibi_app .borbibi_app_container .borbibi_app_container__content a img {
+            height: 35px; } }
       .borbibi_app .borbibi_app_container .borbibi_app_container__content a:not(:last-child) {
         margin-right: 33px; }
 
@@ -893,6 +1425,15 @@ h3 {
   display: none;
   color: #c18b4d;
   align-items: center; }
+  @media only screen and (max-width: 575px) {
+    .borbibi_scrolltop {
+      width: 38px;
+      font-size: 13px;
+      text-align: center;
+      line-height: 27px;
+      right: 5px;
+      padding: 10px 0px;
+      height: initial; } }
   .borbibi_scrolltop i {
     position: absolute;
     bottom: calc(100% + 0px);
@@ -932,12 +1473,16 @@ h3 {
     border-radius: 45px; }
     .borbibi_signup_form .borbibi_signup_form_inner .borbibi_sidebar {
       background: white;
-      padding: 60px 40px 60px  40px;
+      padding: 60px 40px 60px 40px;
       border-top-left-radius: 45px;
       border-bottom-left-radius: 45px;
       margin-right: 30px;
       text-align: left;
       height: 100%; }
+      @media only screen and (min-width: 768px) and (max-width: 991px) {
+        .borbibi_signup_form .borbibi_signup_form_inner .borbibi_sidebar {
+          padding: 60px 15px 60px 21px;
+          margin-right: 2px; } }
       .borbibi_signup_form .borbibi_signup_form_inner .borbibi_sidebar h5 {
         font-size: 20px;
         color: #ff4f4f;
@@ -951,6 +1496,10 @@ h3 {
           font-size: 16px;
           color: #46474f;
           line-height: 26px; }
+          @media only screen and (min-width: 768px) and (max-width: 991px) {
+            .borbibi_signup_form .borbibi_signup_form_inner .borbibi_sidebar ul li {
+              font-size: 14px;
+              line-height: 20px; } }
           .borbibi_signup_form .borbibi_signup_form_inner .borbibi_sidebar ul li:not(:last-child) {
             margin-bottom: 10px; }
           .borbibi_signup_form .borbibi_signup_form_inner .borbibi_sidebar ul li i {
@@ -968,6 +1517,13 @@ h3 {
         font-size: 16px;
         color: #46474f;
         margin-bottom: 10px; }
+        @media only screen and (min-width: 768px) and (max-width: 991px) {
+          .borbibi_signup_form .borbibi_signup_form_inner .borbibi_sidebar .borbibi_sidebar_contact {
+            font-size: 14px; } }
+        @media only screen and (max-width: 575px) {
+          .borbibi_signup_form .borbibi_signup_form_inner .borbibi_sidebar .borbibi_sidebar_contact {
+            font-size: 14px;
+            margin-bottom: 8px; } }
         .borbibi_signup_form .borbibi_signup_form_inner .borbibi_sidebar .borbibi_sidebar_contact i {
           font-size: 14px;
           color: #ff4f4f;
@@ -990,6 +1546,24 @@ h3 {
         background: white;
         margin-top: 20px;
         color: #ff4f4f; }
+        @media only screen and (min-width: 992px) and (max-width: 1199px) {
+          .borbibi_signup_form .borbibi_signup_form_inner .borbibi_sidebar .borbibi_bordered_btn {
+            line-height: 40px;
+            height: 40px;
+            padding: 0 19px;
+            font-size: 14px; } }
+        @media only screen and (min-width: 768px) and (max-width: 991px) {
+          .borbibi_signup_form .borbibi_signup_form_inner .borbibi_sidebar .borbibi_bordered_btn {
+            line-height: 40px;
+            height: 40px;
+            padding: 0 20px;
+            font-size: 13px; } }
+        @media only screen and (max-width: 575px) {
+          .borbibi_signup_form .borbibi_signup_form_inner .borbibi_sidebar .borbibi_bordered_btn {
+            line-height: 40px;
+            height: 40px;
+            padding: 0 25px;
+            font-size: 13px; } }
         .borbibi_signup_form .borbibi_signup_form_inner .borbibi_sidebar .borbibi_bordered_btn i {
           display: inline-block;
           margin-right: 10px; }
@@ -1016,179 +1590,237 @@ h3 {
           .borbibi_signup_form .borbibi_signup_form_inner .borbibi_sidebar .borbibi_bordered_btn:hover::before, .borbibi_signup_form .borbibi_signup_form_inner .borbibi_sidebar .borbibi_navigation__top .borbibi_navigation__top_inner .borbibi_navigation_buttons .borbibi_bordered_btn.borbibi_btn.active::before, .borbibi_navigation__top .borbibi_navigation__top_inner .borbibi_navigation_buttons .borbibi_signup_form .borbibi_signup_form_inner .borbibi_sidebar .borbibi_bordered_btn.borbibi_btn.active::before {
             visibility: visible;
             opacity: 1; }
-    .borbibi_signup_form .borbibi_signup_form_inner .borbibi_step_form .steps ul {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-flow: row;
-      align-items: flex-start;
-      padding-left: 0;
-      margin-top: -21px; }
-      .borbibi_signup_form .borbibi_signup_form_inner .borbibi_step_form .steps ul li {
-        max-width: 25%;
-        flex: 0 0 25%;
-        text-align: left;
-        position: relative; }
-        .borbibi_signup_form .borbibi_signup_form_inner .borbibi_step_form .steps ul li.done::after {
-          background: #f29393;
-          width: 183px; }
-        .borbibi_signup_form .borbibi_signup_form_inner .borbibi_step_form .steps ul li.done .number {
-          box-shadow: 0px 3px 4px 4px #f2f2f2; }
-          .borbibi_signup_form .borbibi_signup_form_inner .borbibi_step_form .steps ul li.done .number::before {
-            visibility: visible;
-            opacity: 1;
-            transform: scale(1); }
-          .borbibi_signup_form .borbibi_signup_form_inner .borbibi_step_form .steps ul li.done .number::after {
-            visibility: visible;
-            opacity: 1; }
-        .borbibi_signup_form .borbibi_signup_form_inner .borbibi_step_form .steps ul li:last-child::after {
-          display: none; }
-        .borbibi_signup_form .borbibi_signup_form_inner .borbibi_step_form .steps ul li:last-child::before {
-          display: none; }
-        .borbibi_signup_form .borbibi_signup_form_inner .borbibi_step_form .steps ul li::before {
-          content: "";
-          position: absolute;
-          left: 0;
-          top: 18px;
-          height: 4px;
-          width: 183px;
-          background: #f2f2f2;
-          transition: all 0.4s linear; }
-        .borbibi_signup_form .borbibi_signup_form_inner .borbibi_step_form .steps ul li::after {
-          content: "";
-          position: absolute;
-          left: 0;
-          top: 18px;
-          height: 4px;
-          width: 0px;
-          background: #f2f2f2;
-          transition: all 0.4s linear; }
-        .borbibi_signup_form .borbibi_signup_form_inner .borbibi_step_form .steps ul li a {
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          flex-flow: column;
-          text-align: left;
-          padding: 0 50px;
-          font-size: 16px;
-          color: #727272;
-          padding-left: 0;
-          align-items: flex-start; }
-          .borbibi_signup_form .borbibi_signup_form_inner .borbibi_step_form .steps ul li a .current-info {
-            display: none; }
-          .borbibi_signup_form .borbibi_signup_form_inner .borbibi_step_form .steps ul li a .number {
-            height: 40px;
-            width: 40px;
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            box-shadow: 0px 0px 0px 4px #f2f2f2;
-            border-radius: 50%;
-            color: #898989;
-            margin-bottom: 23px;
-            background: white;
-            position: relative;
-            z-index: 9; }
-            .borbibi_signup_form .borbibi_signup_form_inner .borbibi_step_form .steps ul li a .number::after {
-              content: "";
-              position: absolute;
-              left: 0;
-              top: 0;
-              height: 100%;
-              width: 100%;
-              background: #f17677;
-              background: -moz-linear-gradient(top, #f17677 0%, #ee2a4f 100%);
-              background: -webkit-linear-gradient(top, #f17677 0%, #ee2a4f 100%);
-              background: linear-gradient(to bottom, #f17677 0%, #ee2a4f 100%);
-              filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f17677', endColorstr='#ee2a4f',GradientType=0 );
-              box-shadow: 0px 7px 13px rgba(122, 12, 12, 0.27);
-              border-radius: 50%;
-              visibility: hidden;
-              opacity: 0; }
-            .borbibi_signup_form .borbibi_signup_form_inner .borbibi_step_form .steps ul li a .number::before {
-              position: absolute;
-              font-family: "FontAwesome";
-              content: "\f00c";
-              left: 10px;
-              top: 3px;
-              color: white;
-              font-size: 22px;
-              z-index: 9;
-              visibility: hidden;
-              opacity: 0;
-              transition: all 0.4s linear;
-              transform: scale(1.3); }
-    .borbibi_signup_form .borbibi_signup_form_inner .borbibi_step_form .content {
-      background: white;
-      padding: 40px 40px;
-      margin-right: 40px;
-      border-radius: 22px;
-      margin-top: 30px;
-      box-shadow: 0px 0px 25px rgba(158, 82, 82, 0.15); }
-      .borbibi_signup_form .borbibi_signup_form_inner .borbibi_step_form .content .title {
-        display: none; }
-      .borbibi_signup_form .borbibi_signup_form_inner .borbibi_step_form .content .form-group label {
-        font-size: 14px;
-        color: #46474f;
-        font-family: "Poppins"; }
-      .borbibi_signup_form .borbibi_signup_form_inner .borbibi_step_form .content .form-group .form-control {
-        line-height: 40px;
-        height: 40px;
-        border-radius: 30px;
-        border: 1px solid #ffd0d0;
-        padding-left: 15px; }
-        .borbibi_signup_form .borbibi_signup_form_inner .borbibi_step_form .content .form-group .form-control:focus {
-          outline: none;
-          box-shadow: none; }
-    .borbibi_signup_form .borbibi_signup_form_inner .borbibi_step_form .actions {
-      padding: 40px 40px;
-      margin-right: 40px; }
-      .borbibi_signup_form .borbibi_signup_form_inner .borbibi_step_form .actions ul {
-        padding-left: 0;
+    .borbibi_signup_form .borbibi_signup_form_inner .borbibi_step_form {
+      position: relative; }
+      .borbibi_signup_form .borbibi_signup_form_inner .borbibi_step_form .borbibi_complitation {
+        position: absolute;
+        display: none;
+        position: absolute;
+        top: -48px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-flow: row; }
+        .borbibi_signup_form .borbibi_signup_form_inner .borbibi_step_form .borbibi_complitation p, .borbibi_signup_form .borbibi_signup_form_inner .borbibi_step_form .borbibi_complitation .borbibi_app .borbibi_app_container .borbibi_app_container__content ul li, .borbibi_app .borbibi_app_container .borbibi_app_container__content ul .borbibi_signup_form .borbibi_signup_form_inner .borbibi_step_form .borbibi_complitation li {
+          display: inline-block;
+          padding-right: 10px; }
+        .borbibi_signup_form .borbibi_signup_form_inner .borbibi_step_form .borbibi_complitation .parcent {
+          color: #f17677;
+          font-family: "Playfair Display";
+          font-size: 28px; }
+        @media only screen and (max-width: 575px) {
+          .borbibi_signup_form .borbibi_signup_form_inner .borbibi_step_form .borbibi_complitation {
+            display: block; } }
+      @media only screen and (max-width: 767px) {
+        .borbibi_signup_form .borbibi_signup_form_inner .borbibi_step_form .steps {
+          margin: 0 20px 0 20px; } }
+      @media only screen and (max-width: 575px) {
+        .borbibi_signup_form .borbibi_signup_form_inner .borbibi_step_form .steps {
+          display: none; } }
+      .borbibi_signup_form .borbibi_signup_form_inner .borbibi_step_form .steps ul {
         display: flex;
         align-items: center;
         justify-content: center;
         flex-flow: row;
-        justify-content: flex-end; }
-        .borbibi_signup_form .borbibi_signup_form_inner .borbibi_step_form .actions ul li {
-          margin-left: 10px; }
-          .borbibi_signup_form .borbibi_signup_form_inner .borbibi_step_form .actions ul li a {
-            line-height: 40px;
-            height: 40px;
-            padding: 0 30px;
-            font-size: 16px;
-            box-shadow: 0 0 0 1px #ee2b50;
-            border-radius: 30px;
-            color: #f29393;
-            display: inline-flex;
+        align-items: flex-start;
+        padding-left: 0;
+        margin-top: -21px; }
+        .borbibi_signup_form .borbibi_signup_form_inner .borbibi_step_form .steps ul li {
+          max-width: 25%;
+          flex: 0 0 25%;
+          text-align: left;
+          position: relative; }
+          .borbibi_signup_form .borbibi_signup_form_inner .borbibi_step_form .steps ul li.done::after {
+            background: #f29393;
+            width: 183px; }
+          .borbibi_signup_form .borbibi_signup_form_inner .borbibi_step_form .steps ul li.done .number {
+            box-shadow: 0px 3px 4px 4px #f2f2f2; }
+            .borbibi_signup_form .borbibi_signup_form_inner .borbibi_step_form .steps ul li.done .number::before {
+              visibility: visible;
+              opacity: 1;
+              transform: scale(1); }
+            .borbibi_signup_form .borbibi_signup_form_inner .borbibi_step_form .steps ul li.done .number::after {
+              visibility: visible;
+              opacity: 1; }
+          .borbibi_signup_form .borbibi_signup_form_inner .borbibi_step_form .steps ul li:last-child::after {
+            display: none; }
+          .borbibi_signup_form .borbibi_signup_form_inner .borbibi_step_form .steps ul li:last-child::before {
+            display: none; }
+          .borbibi_signup_form .borbibi_signup_form_inner .borbibi_step_form .steps ul li::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 18px;
+            height: 4px;
+            width: 183px;
+            background: #f2f2f2;
+            transition: all 0.4s linear; }
+          .borbibi_signup_form .borbibi_signup_form_inner .borbibi_step_form .steps ul li::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 18px;
+            height: 4px;
+            width: 0px;
+            background: #f2f2f2;
+            transition: all 0.4s linear; }
+          .borbibi_signup_form .borbibi_signup_form_inner .borbibi_step_form .steps ul li a {
+            display: flex;
             align-items: center;
             justify-content: center;
-            position: relative;
-            z-index: 9;
-            transition: all 0.4s linear; }
-            .borbibi_signup_form .borbibi_signup_form_inner .borbibi_step_form .actions ul li a::before {
-              content: "";
-              position: absolute;
-              left: 0;
-              top: 0;
-              width: 100%;
-              height: 100%;
-              background: #f17677;
-              background: -moz-linear-gradient(top, #f17677 0%, #ee2a4f 100%);
-              background: -webkit-linear-gradient(top, #f17677 0%, #ee2a4f 100%);
-              background: linear-gradient(to bottom, #f17677 0%, #ee2a4f 100%);
-              filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f17677', endColorstr='#ee2a4f',GradientType=0 );
-              box-shadow: 0px 7px 13px rgba(122, 12, 12, 0.27);
+            flex-flow: column;
+            text-align: left;
+            padding: 0 50px;
+            font-size: 16px;
+            color: #727272;
+            padding-left: 0;
+            align-items: flex-start; }
+            @media only screen and (min-width: 768px) and (max-width: 991px) {
+              .borbibi_signup_form .borbibi_signup_form_inner .borbibi_step_form .steps ul li a {
+                font-size: 13px; } }
+            @media only screen and (max-width: 767px) {
+              .borbibi_signup_form .borbibi_signup_form_inner .borbibi_step_form .steps ul li a {
+                font-size: 14px; } }
+            .borbibi_signup_form .borbibi_signup_form_inner .borbibi_step_form .steps ul li a .current-info {
+              display: none; }
+            .borbibi_signup_form .borbibi_signup_form_inner .borbibi_step_form .steps ul li a .number {
+              height: 40px;
+              width: 40px;
+              display: inline-flex;
+              align-items: center;
+              justify-content: center;
+              box-shadow: 0px 0px 0px 4px #f2f2f2;
+              border-radius: 50%;
+              color: #898989;
+              margin-bottom: 23px;
+              background: white;
+              position: relative;
+              z-index: 9; }
+              .borbibi_signup_form .borbibi_signup_form_inner .borbibi_step_form .steps ul li a .number::after {
+                content: "";
+                position: absolute;
+                left: 0;
+                top: 0;
+                height: 100%;
+                width: 100%;
+                background: #f17677;
+                background: -moz-linear-gradient(top, #f17677 0%, #ee2a4f 100%);
+                background: -webkit-linear-gradient(top, #f17677 0%, #ee2a4f 100%);
+                background: linear-gradient(to bottom, #f17677 0%, #ee2a4f 100%);
+                filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f17677', endColorstr='#ee2a4f',GradientType=0 );
+                box-shadow: 0px 7px 13px rgba(122, 12, 12, 0.27);
+                border-radius: 50%;
+                visibility: hidden;
+                opacity: 0; }
+              .borbibi_signup_form .borbibi_signup_form_inner .borbibi_step_form .steps ul li a .number::before {
+                position: absolute;
+                font-family: "FontAwesome";
+                content: "\f00c";
+                left: 10px;
+                top: 3px;
+                color: white;
+                font-size: 22px;
+                z-index: 9;
+                visibility: hidden;
+                opacity: 0;
+                transition: all 0.4s linear;
+                transform: scale(1.3); }
+      .borbibi_signup_form .borbibi_signup_form_inner .borbibi_step_form .content {
+        background: white;
+        padding: 40px 40px;
+        margin-right: 40px;
+        border-radius: 22px;
+        margin-top: 30px;
+        box-shadow: 0px 0px 25px rgba(158, 82, 82, 0.15); }
+        @media only screen and (min-width: 768px) and (max-width: 991px) {
+          .borbibi_signup_form .borbibi_signup_form_inner .borbibi_step_form .content {
+            background: white;
+            padding: 40px 13px;
+            margin-right: 0px; } }
+        @media only screen and (max-width: 767px) {
+          .borbibi_signup_form .borbibi_signup_form_inner .borbibi_step_form .content {
+            margin-right: 20px;
+            margin-left: 20px; } }
+        @media only screen and (max-width: 575px) {
+          .borbibi_signup_form .borbibi_signup_form_inner .borbibi_step_form .content {
+            padding: 40px 20px; } }
+        .borbibi_signup_form .borbibi_signup_form_inner .borbibi_step_form .content .title {
+          display: none; }
+        .borbibi_signup_form .borbibi_signup_form_inner .borbibi_step_form .content .form-group label {
+          font-size: 14px;
+          color: #46474f;
+          font-family: "Poppins"; }
+          @media only screen and (min-width: 768px) and (max-width: 991px) {
+            .borbibi_signup_form .borbibi_signup_form_inner .borbibi_step_form .content .form-group label {
+              font-size: 12px; } }
+        .borbibi_signup_form .borbibi_signup_form_inner .borbibi_step_form .content .form-group .form-control {
+          line-height: 40px;
+          height: 40px;
+          border-radius: 30px;
+          border: 1px solid #ffd0d0;
+          padding-left: 15px; }
+          .borbibi_signup_form .borbibi_signup_form_inner .borbibi_step_form .content .form-group .form-control:focus {
+            outline: none;
+            box-shadow: none; }
+      .borbibi_signup_form .borbibi_signup_form_inner .borbibi_step_form .actions {
+        padding: 40px 40px;
+        margin-right: 40px; }
+        @media only screen and (max-width: 575px) {
+          .borbibi_signup_form .borbibi_signup_form_inner .borbibi_step_form .actions {
+            padding: 40px 37px;
+            margin-right: 0; } }
+        .borbibi_signup_form .borbibi_signup_form_inner .borbibi_step_form .actions ul {
+          padding-left: 0;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-flow: row;
+          justify-content: flex-end; }
+          .borbibi_signup_form .borbibi_signup_form_inner .borbibi_step_form .actions ul li {
+            margin-left: 10px; }
+            .borbibi_signup_form .borbibi_signup_form_inner .borbibi_step_form .actions ul li a {
+              line-height: 40px;
+              height: 40px;
+              padding: 0 30px;
+              font-size: 16px;
+              box-shadow: 0 0 0 1px #ee2b50;
               border-radius: 30px;
-              transition: all 0.4s linear;
-              z-index: -1;
-              visibility: hidden;
-              opacity: 0; }
-            .borbibi_signup_form .borbibi_signup_form_inner .borbibi_step_form .actions ul li a:hover, .borbibi_signup_form .borbibi_signup_form_inner .borbibi_step_form .actions ul li .borbibi_navigation__top .borbibi_navigation__top_inner .borbibi_navigation_buttons a.borbibi_btn.active, .borbibi_navigation__top .borbibi_navigation__top_inner .borbibi_navigation_buttons .borbibi_signup_form .borbibi_signup_form_inner .borbibi_step_form .actions ul li a.borbibi_btn.active {
-              color: white; }
-              .borbibi_signup_form .borbibi_signup_form_inner .borbibi_step_form .actions ul li a:hover::before, .borbibi_signup_form .borbibi_signup_form_inner .borbibi_step_form .actions ul li .borbibi_navigation__top .borbibi_navigation__top_inner .borbibi_navigation_buttons a.borbibi_btn.active::before, .borbibi_navigation__top .borbibi_navigation__top_inner .borbibi_navigation_buttons .borbibi_signup_form .borbibi_signup_form_inner .borbibi_step_form .actions ul li a.borbibi_btn.active::before {
-                visibility: visible;
-                opacity: 1; }
+              color: #f29393;
+              display: inline-flex;
+              align-items: center;
+              justify-content: center;
+              position: relative;
+              z-index: 9;
+              transition: all 0.4s linear; }
+              @media only screen and (max-width: 575px) {
+                .borbibi_signup_form .borbibi_signup_form_inner .borbibi_step_form .actions ul li a {
+                  line-height: 35px;
+                  height: 35px;
+                  padding: 0 30px;
+                  font-size: 14px; } }
+              .borbibi_signup_form .borbibi_signup_form_inner .borbibi_step_form .actions ul li a::before {
+                content: "";
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                background: #f17677;
+                background: -moz-linear-gradient(top, #f17677 0%, #ee2a4f 100%);
+                background: -webkit-linear-gradient(top, #f17677 0%, #ee2a4f 100%);
+                background: linear-gradient(to bottom, #f17677 0%, #ee2a4f 100%);
+                filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f17677', endColorstr='#ee2a4f',GradientType=0 );
+                box-shadow: 0px 7px 13px rgba(122, 12, 12, 0.27);
+                border-radius: 30px;
+                transition: all 0.4s linear;
+                z-index: -1;
+                visibility: hidden;
+                opacity: 0; }
+              .borbibi_signup_form .borbibi_signup_form_inner .borbibi_step_form .actions ul li a:hover, .borbibi_signup_form .borbibi_signup_form_inner .borbibi_step_form .actions ul li .borbibi_navigation__top .borbibi_navigation__top_inner .borbibi_navigation_buttons a.borbibi_btn.active, .borbibi_navigation__top .borbibi_navigation__top_inner .borbibi_navigation_buttons .borbibi_signup_form .borbibi_signup_form_inner .borbibi_step_form .actions ul li a.borbibi_btn.active {
+                color: white; }
+                .borbibi_signup_form .borbibi_signup_form_inner .borbibi_step_form .actions ul li a:hover::before, .borbibi_signup_form .borbibi_signup_form_inner .borbibi_step_form .actions ul li .borbibi_navigation__top .borbibi_navigation__top_inner .borbibi_navigation_buttons a.borbibi_btn.active::before, .borbibi_navigation__top .borbibi_navigation__top_inner .borbibi_navigation_buttons .borbibi_signup_form .borbibi_signup_form_inner .borbibi_step_form .actions ul li a.borbibi_btn.active::before {
+                  visibility: visible;
+                  opacity: 1; }
 
 .borbibi_breadcrumb {
   position: relative;
@@ -1207,6 +1839,37 @@ fieldset legend {
   font-size: 20px;
   color: #9697a1;
   margin-bottom: 25px; }
+
+@media only screen and (max-width: 575px) {
+  fieldset .borbibi_field_group .borbibi_aggrement_check {
+    margin-top: 15px; } }
+
+fieldset .borbibi_field_group .form-control {
+  font-size: 14px;
+  padding-left: 15px; }
+
+fieldset .borbibi_field_group .borbibi_age {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: row;
+  border: 1px solid #ffd0d0;
+  border-radius: 30px; }
+  fieldset .borbibi_field_group .borbibi_age .borbibi_searchbox_age_devider {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background: #ececec;
+    color: #f29393; }
+  fieldset .borbibi_field_group .borbibi_age .select2-container--default {
+    flex: 0 0 calc(50% - 15px);
+    border: none; }
+    fieldset .borbibi_field_group .borbibi_age .select2-container--default .select2-selection__rendered, fieldset .borbibi_field_group .borbibi_age .select2-container--default .borbibi_signup .borbibi_signup__container .form-group .form-control, .borbibi_signup .borbibi_signup__container .form-group fieldset .borbibi_field_group .borbibi_age .select2-container--default .form-control, fieldset .borbibi_field_group .borbibi_banner__searchbox .borbibi_searchbox_content form .borbibi_searchbox_field .form-group.borbibi_age .select2-container--default .select2-selection__rendered, .borbibi_banner__searchbox .borbibi_searchbox_content form .borbibi_searchbox_field fieldset .borbibi_field_group .form-group.borbibi_age .select2-container--default .select2-selection__rendered, fieldset .borbibi_field_group .borbibi_age .select2-container--default .borbibi_group_field .group-control .form-control .select2-selection__rendered,
+    fieldset .borbibi_field_group .borbibi_age .borbibi_group_field .group-control .select2-container--default .select2-selection__rendered, fieldset .borbibi_field_group .borbibi_group_field .group-control .borbibi_age .select2-container--default .select2-selection__rendered {
+      border: none; }
 
 fieldset .borbibi_field_group:not(:last-child) {
   padding-bottom: 30px;
@@ -1234,12 +1897,43 @@ fieldset .borbibi_field_group .borbibi_group_field .group-control {
   border: 1px solid #ffd0d0; }
   fieldset .borbibi_field_group .borbibi_group_field .group-control > span:last-child {
     border-right: 0; }
-  fieldset .borbibi_field_group .borbibi_group_field .group-control .form-control, fieldset .borbibi_field_group .borbibi_group_field .group-control .select2-container--default {
+  fieldset .borbibi_field_group .borbibi_group_field .group-control .form-control,
+  fieldset .borbibi_field_group .borbibi_group_field .group-control .select2-container--default {
     flex: 0 0 50%;
     max-width: 50%;
-    border-right: 1px solid #ffd0d0; }
-    fieldset .borbibi_field_group .borbibi_group_field .group-control .form-control .borbibi_signup .borbibi_signup__container .form-group .form-control, .borbibi_signup .borbibi_signup__container .form-group fieldset .borbibi_field_group .borbibi_group_field .group-control .form-control .form-control, fieldset .borbibi_field_group .borbibi_group_field .group-control .form-control .borbibi_banner__searchbox .borbibi_searchbox_content form .borbibi_searchbox_field .form-group.borbibi_age .select2-selection__rendered, .borbibi_banner__searchbox .borbibi_searchbox_content form .borbibi_searchbox_field .form-group.borbibi_age fieldset .borbibi_field_group .borbibi_group_field .group-control .form-control .select2-selection__rendered, fieldset .borbibi_field_group .borbibi_group_field .group-control .form-control .select2-selection__rendered, fieldset .borbibi_field_group .borbibi_group_field .group-control .select2-container--default .borbibi_signup .borbibi_signup__container .form-group .form-control, .borbibi_signup .borbibi_signup__container .form-group fieldset .borbibi_field_group .borbibi_group_field .group-control .select2-container--default .form-control, fieldset .borbibi_field_group .borbibi_group_field .group-control .select2-container--default .borbibi_banner__searchbox .borbibi_searchbox_content form .borbibi_searchbox_field .form-group.borbibi_age .select2-selection__rendered, .borbibi_banner__searchbox .borbibi_searchbox_content form .borbibi_searchbox_field .form-group.borbibi_age fieldset .borbibi_field_group .borbibi_group_field .group-control .select2-container--default .select2-selection__rendered, fieldset .borbibi_field_group .borbibi_group_field .group-control .select2-container--default .select2-selection__rendered {
+    border-right: 1px solid #ffd0d0;
+    font-size: 14px; }
+    fieldset .borbibi_field_group .borbibi_group_field .group-control .form-control .borbibi_signup .borbibi_signup__container .form-group .form-control, .borbibi_signup .borbibi_signup__container .form-group fieldset .borbibi_field_group .borbibi_group_field .group-control .form-control .form-control, fieldset .borbibi_field_group .borbibi_group_field .group-control .form-control .borbibi_banner__searchbox .borbibi_searchbox_content form .borbibi_searchbox_field .form-group.borbibi_age .select2-selection__rendered, .borbibi_banner__searchbox .borbibi_searchbox_content form .borbibi_searchbox_field .form-group.borbibi_age fieldset .borbibi_field_group .borbibi_group_field .group-control .form-control .select2-selection__rendered, fieldset .borbibi_field_group .borbibi_group_field .group-control .form-control .select2-selection__rendered,
+    fieldset .borbibi_field_group .borbibi_group_field .group-control .select2-container--default .borbibi_signup .borbibi_signup__container .form-group .form-control,
+    .borbibi_signup .borbibi_signup__container .form-group fieldset .borbibi_field_group .borbibi_group_field .group-control .select2-container--default .form-control,
+    fieldset .borbibi_field_group .borbibi_group_field .group-control .select2-container--default .borbibi_banner__searchbox .borbibi_searchbox_content form .borbibi_searchbox_field .form-group.borbibi_age .select2-selection__rendered,
+    .borbibi_banner__searchbox .borbibi_searchbox_content form .borbibi_searchbox_field .form-group.borbibi_age fieldset .borbibi_field_group .borbibi_group_field .group-control .select2-container--default .select2-selection__rendered,
+    fieldset .borbibi_field_group .borbibi_group_field .group-control .select2-container--default .select2-selection__rendered {
       border: none; }
+
+fieldset .borbibi_field_group .borbibi_signup_finish_content .borbibi_signup_finish_content_image {
+  position: relative;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  overflow: hidden; }
+  fieldset .borbibi_field_group .borbibi_signup_finish_content .borbibi_signup_finish_content_image::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(96, 5, 5, 0.3); }
+
+fieldset .borbibi_field_group .borbibi_signup_finish_content .borbibi_signup_finish_content_body {
+  text-align: center;
+  padding: 30px 100px; }
+  @media only screen and (max-width: 767px) {
+    fieldset .borbibi_field_group .borbibi_signup_finish_content .borbibi_signup_finish_content_body {
+      padding: 30px 14px; } }
+  fieldset .borbibi_field_group .borbibi_signup_finish_content .borbibi_signup_finish_content_body h1 {
+    color: #ff4f4f;
+    line-height: 55px; }
 
 .borbibi_add_more {
   color: #ff4f4f;

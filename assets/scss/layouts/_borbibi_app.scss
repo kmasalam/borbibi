@@ -1,6 +1,10 @@
 .borbibi_app {
     padding-top: 150px;
     padding-bottom: 150px;
+    @include respond-to(allsmall){
+      padding-top: 45px;
+      padding-bottom: 75px;
+    }
     .borbibi_app_container {
       background: url(../images/borbibi-apps-background.jpg) no-repeat;
       background-size: cover;
@@ -22,28 +26,79 @@
         left: 80px;
         top: 50%;
         transform: translateY(-50%);
+        @include respond-to (mdm){
+          left: -3px;
+          width: 34%;
+        }
+        @include respond-to(allsmall){
+          left: 24px;
+          width: 154px;
+          border-radius: 18px;
+        }
+        @include respond-to(little){
+          display: none;
+        }
         img {
           border-radius: 16px;
         }
       }
       .borbibi_app_container__content {
+        @include respond-to(large){
+          margin-left: 50px;
+        }
+        @include respond-to(mdm){
+          margin-left: 50px;
+          padding-right: 30px;
+        }
+        @include respond-to(allsmall){
+          margin-left: 200px;
+        }
+        @include respond-to(little){
+          text-align: center;
+          margin-left: 0;
+        }
         h1 {
           font-size: $fz45;
           color: $cff;
           font-family: $play;
           margin-bottom: 15px;
+          @include respond-to(large){
+            font-size: 34px;
+          }
+          @include respond-to(mdm){
+            font-size: 28px;
+          }
+          @include respond-to(allsmall){
+            font-size: 27px;
+            margin-bottom: 15px;
+          }
+          @include respond-to(little){
+            font-size: 18px;
+          }
         }
         p {
           font-size: $fz16;
           color: $cff;
           font-weight: $light;
           margin-bottom: 15px;
+          @include respond-to(allsmall){
+            font-size: 12px;
+          }
         }
         ul {
           @include flexDirection(row);
           justify-content: flex-start;
           padding-left: 0;
           margin-bottom: 30px;
+          @include respond-to(mdm){
+            margin-bottom: 10px;
+          }
+          @include respond-to(allsmall){
+            margin-bottom: 10px;
+          }
+          @include respond-to(little){
+            justify-self: center !important;
+          }
   
           li {
             @extend p;
@@ -69,12 +124,18 @@
           color: $cff;
           font-weight: $light;
           margin-bottom: 15px;
+          @include respond-to(allsmall){
+            font-size: 12px;
+          }
         }
         a {
           @include inlineFlex;
           margin-top: 10px;
           img {
             border-radius: 12px;
+            @include respond-to(allsmall){
+              height: 35px;
+            }
           }
           &:not(:last-child) {
             margin-right: 33px;

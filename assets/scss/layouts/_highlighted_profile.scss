@@ -12,14 +12,23 @@
           @include flexDirection(row);
           justify-content: space-between;
           padding: 20px;
+          @include respond-to(mdm){
+            padding: 10px;
+          }
           &__name {
             p {
               color: $c2d;
+              @include respond-to(mdm){
+                font-size: 12px;
+              }
             }
           }
           &__info {
             color: $c70;
             font-weight: $extralight;
+            @include respond-to(mdm){
+              font-size: 12px;
+            }
           }
         }
       }

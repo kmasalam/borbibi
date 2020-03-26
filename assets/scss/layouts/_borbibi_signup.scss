@@ -1,93 +1,130 @@
 .borbibi_signup {
-    background: $ceae;
-    padding-top: 70px;
-    padding-bottom: 70px;
+  background: $ceae;
+  padding-top: 70px;
+  padding-bottom: 70px;
+  position: relative;
+  .borbibi_signup__pattern {
+    position: absolute;
+    z-index: 0;
+    opacity: 0.7;
+    &.signup_pattern_one {
+      left: 0;
+      top: 0;
+    }
+    &.signup_pattern_two {
+      right: 0;
+      top: 0;
+      filter: grayscale(100%);
+    }
+    &.signup_pattern_three {
+      right: 0;
+      bottom: 0;
+    }
+    &.signup_pattern_four {
+      left: 0;
+      bottom: 0;
+      filter: grayscale(100%);
+    }
+  }
+  .borbibi_signup__container {
+    border: 2px solid $cf1;
+    border-radius: 46px;
+    padding-top: 60px;
+    padding-bottom: 60px;
     position: relative;
-    .borbibi_signup__pattern {
-      position: absolute;
-      z-index: 0;
-      opacity: 0.7;
-      &.signup_pattern_one {
-        left: 0;
-        top: 0;
+    z-index: 9;
+    @include respond-to(allsmall) {
+      padding: 30px 20px 35px 20px;
+    }
+    .borbibi_section__title {
+    }
+    .form-group {
+      label {
+        font-family: $poppins;
+        font-size: $fz14;
+        color: $c46;
+        margin-bottom: 10px;
       }
-      &.signup_pattern_two {
-        right: 0;
-        top: 0;
-        filter: grayscale(100%);
-      }
-      &.signup_pattern_three {
-        right: 0;
-        bottom: 0;
-      }
-      &.signup_pattern_four {
-        left: 0;
-        bottom: 0;
-        filter: grayscale(100%);
+      .form-control,
+      .select2-selection__rendered {
+        @extend .select2-selection__rendered;
+        &:focus {
+          box-shadow: none;
+          outline: none;
+        }
+        &.borbibi_awesome_select {
+        }
       }
     }
-    .borbibi_signup__container {
-      border: 2px solid $cf1;
-      border-radius: 46px;
-      padding-top: 60px;
-      padding-bottom: 60px;
-      position: relative;
-      z-index: 9;
-      .borbibi_section__title {
-      }
-      .form-group {
-        label {
-          font-family: $poppins;
-          font-size: $fz14;
-          color: $c46;
+    .borbibi_register_submit_area {
+      .borbibi_btn {
+        padding-left: 30px;
+        padding-right: 30px;
+        font-weight: $light;
+        margin-bottom: 25px;
+        @include respond-to(mdm) {
+          font-size: 14px;
+          padding-left: 20px;
+          padding-right: 20px;
+          margin-bottom: 15px;
+        }
+        @include respond-to(allsmall) {
           margin-bottom: 10px;
-        }
-        .form-control,
-        .select2-selection__rendered {
-          @extend .select2-selection__rendered;
-          &:focus {
-            box-shadow: none;
-            outline: none;
-          }
-          &.borbibi_awesome_select {
-          }
+          margin-top: 20px;
+          padding-left: 20px;
+          padding-right: 20px;
+          font-size: 13px;
         }
       }
-      .borbibi_register_submit_area {
-        .borbibi_btn {
-          padding-left: 30px;
-          padding-right: 30px;
-          font-weight: $light;
-          margin-bottom: 25px;
-        }
-        span {
-          font-size: $fz16;
-          color: $cf1;
-          text-transform: uppercase;
-          font-weight: $medium;
-          display: block;
-        }
+      span {
+        font-size: $fz16;
+        color: $cf1;
+        text-transform: uppercase;
+        font-weight: $medium;
+        display: block;
       }
-      .borbibi_signup__container_social {
-        margin-top: 30px;
-        .borbibi_social_btn {
-          list-style: 45px;
-          height: 45px;
-          padding: 0 40px;
-          display: inline-flex;
-          align-items: center;
-          justify-self: center;
-          font-weight: $light;
-          margin-top: 0px;
-          background: $cb2b;
-          &:not(:last-child) {
-            margin-right: 30px;
+    }
+    .borbibi_signup__container_social {
+      margin-top: 30px;
+      .borbibi_social_btn {
+        list-style: 45px;
+        height: 45px;
+        padding: 0 40px;
+        display: inline-flex;
+        align-items: center;
+        justify-self: center;
+        font-weight: $light;
+        margin-top: 0px;
+        background: $cb2b;
+        @include respond-to(mdm) {
+          font-size: 14px;
+          padding: 0 30px;
+        }
+        @include respond-to(allsmall) {
+          font-size: 14px;
+          padding: 0 30px;
+        }
+        @include respond-to(little) {
+          font-size: 10px;
+          padding: 0 9px;
+        }
+        &:not(:last-child) {
+          margin-right: 30px;
+          @include respond-to(mdm) {
+            margin-right: 20px;
           }
-          i {
-            display: inline-block;
-            padding-right: 7px;
+          @include respond-to(allsmall) {
+            margin-right: 10px;
           }
+          @include respond-to(little) {
+            margin-right: 5px;
+          }
+        }
+        i {
+          display: inline-block;
+          padding-right: 7px;
         }
       }
     }
   }
+}

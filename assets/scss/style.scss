@@ -33,7 +33,13 @@
     bottom: 14px;
   }
 }
-
+.select2-selection__choice {
+  border-radius: 30px !important;
+  margin-top: 6px !important;
+  height: 36px;
+  line-height: 37px;
+  background: $cff !important;
+}
 .select2-selection {
   line-height: 40px !important;
   height: 40px !important;
@@ -50,12 +56,13 @@
   border: none !important;
   outline: none !important;
 }
-.select2-container--default{
-    display: block;
+.select2-container--default {
+  display: block;
 }
 .select2-container--default .select2-selection--single {
   border-radius: 46px !important;
 }
+.borbibi_file_uploader,
 .select2-selection__rendered {
   border: 1px solid $cffd;
   border-radius: 46px;
@@ -67,6 +74,33 @@
   line-height: 40px;
   padding: 0 0 0 15px;
   border-radius: 46px !important;
+  display: block;
+}
+.borbibi_file_uploader {
+  position: relative;
+  input {
+    height: 40px;
+    line-height: 34px;
+    border-radius: 30px;
+    opacity: 0;
+    width: 100%;
+  }
+  span {
+    background: $cfbf7;
+    height: 100%;
+    width: 120px;
+    border-radius: 30px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding-left: 10px;
+    text-align: center;
+  }
+  // &::before{
+  //   background: $cff;
+  //   height: 100%;
+  //   width
+  // }
 }
 @import "layouts/borbibi_aggrement_check";
 /*--------------------------------
@@ -115,28 +149,28 @@
   padding-bottom: 150px;
   margin-bottom: -100px;
   position: relative;
-  > img{
-      position: absolute;
-      z-index: 0;
-      opacity: 0.5;
+  > img {
+    position: absolute;
+    z-index: 0;
+    opacity: 0.5;
   }
-  .borbibi_pattern1{
-      top: 0;
-      left: 0;
+  .borbibi_pattern1 {
+    top: 0;
+    left: 0;
   }
-  .borbibi_pattern2{
-      top: 0;
-      right: 0;
-      filter: grayscale(100%);
+  .borbibi_pattern2 {
+    top: 0;
+    right: 0;
+    filter: grayscale(100%);
   }
-  .borbibi_pattern3{
-      right: 0;
-      bottom: 0;
+  .borbibi_pattern3 {
+    right: 0;
+    bottom: 0;
   }
-  .borbibi_pattern4{
-      left: 0;
-      bottom: 0;
-      filter: grayscale(100%);
+  .borbibi_pattern4 {
+    left: 0;
+    bottom: 0;
+    filter: grayscale(100%);
   }
   .borbibi_section__title {
     h3 {
@@ -148,101 +182,161 @@
     border: 1px solid $cf1;
     border-radius: 45px;
     .borbibi_sidebar {
-        background: $cff;
-        padding: 60px 40px 60px  40px;
-        border-top-left-radius: 45px;
-        border-bottom-left-radius: 45px;
-        margin-right: 30px;
-        text-align: left;
-        height: 100%;
-        h5{
-            font-size: $fz20;
-            color: $cff4f;
-            font-family: $play;
-            line-height: 30px;
-        }
-        ul{
-            padding-left: 0;
-            margin-top: 25px;
-            margin-bottom: 25px;    
-            li{
-                font-size: $fz16;
-                color: $c46;
-                line-height: 26px;
-                &:not(:last-child){
-                    margin-bottom: 10px;
-                }
-                i{
-                    font-size: $fz14;
-                    color: $cff4f;
-                    display: inline-block;
-                    margin-right: 5px;
-                }
-            }
-        }
-        p{
-            font-style: italic;
-            font-size: $fz14;
-            color: $c46;
-            padding-top: 20px;
-            padding-bottom: 20px;
-            i{}
-        }
-        .borbibi_sidebar_contact{
-            font-size: $fz16;
-            color: $c46;
+      background: $cff;
+      padding: 60px 40px 60px 40px;
+      border-top-left-radius: 45px;
+      border-bottom-left-radius: 45px;
+      margin-right: 30px;
+      text-align: left;
+      height: 100%;
+      @include respond-to(mdm) {
+        padding: 60px 15px 60px 21px;
+        margin-right: 2px;
+      }
+      h5 {
+        font-size: $fz20;
+        color: $cff4f;
+        font-family: $play;
+        line-height: 30px;
+      }
+      ul {
+        padding-left: 0;
+        margin-top: 25px;
+        margin-bottom: 25px;
+        li {
+          font-size: $fz16;
+          color: $c46;
+          line-height: 26px;
+          @include respond-to(mdm) {
+            font-size: 14px;
+            line-height: 20px;
+          }
+          &:not(:last-child) {
             margin-bottom: 10px;
-            i{
-                font-size: $fz14;
-                color: $cff4f;
-                display: inline-block;
-                margin-right: 5px;
-            }
+          }
+          i {
+            font-size: $fz14;
+            color: $cff4f;
+            display: inline-block;
+            margin-right: 5px;
+          }
         }
-        .borbibi_bordered_btn{
-            @include borbibi_bordered_btn(45px, 30px, 16px);
-              @include inlineFlex;
-              position: relative;
-              z-index: 9;
-              @include transition(.40s);
-              border: none;
-              background: $cff;
-              margin-top: 20px;
-              color: $cff4f;
-              i{
-                  display: inline-block;
-                  margin-right: 10px;
-              }
-              &::before{
-                  content: "";
-                  position: absolute;
-                  left: 0;
-                  top: 0;
-                  width: 100%;
-                  height: 100%;
-                  background: #f17677;
-                  background: -moz-linear-gradient(top, #f17677 0%, #ee2a4f 100%);
-                  background: -webkit-linear-gradient(top, #f17677 0%, #ee2a4f 100%);
-                  background: linear-gradient(to bottom, #f17677 0%, #ee2a4f 100%);
-                  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f17677', endColorstr='#ee2a4f',GradientType=0 );
-                  box-shadow: 0px 7px 13px rgba(122, 12, 12, 0.27);
-                  border-radius: 30px;
-                  @include transition(.40s);
-                  z-index: -1;
-                  visibility: hidden;
-                  opacity: 0;
-              }
-              &:hover{
-                  color: $cff;
-                  &::before{
-                      visibility: visible;
-                      opacity: 1;
-                  }
-              }
+      }
+      p {
+        font-style: italic;
+        font-size: $fz14;
+        color: $c46;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        i {
         }
+      }
+      .borbibi_sidebar_contact {
+        font-size: $fz16;
+        color: $c46;
+        margin-bottom: 10px;
+        @include respond-to(mdm) {
+          font-size: 14px;
+        }
+        @include respond-to(little) {
+          font-size: 14px;
+          margin-bottom: 8px;
+        }
+        i {
+          font-size: $fz14;
+          color: $cff4f;
+          display: inline-block;
+          margin-right: 5px;
+        }
+      }
+      .borbibi_bordered_btn {
+        @include borbibi_bordered_btn(45px, 30px, 16px);
+        @include inlineFlex;
+        position: relative;
+        z-index: 9;
+        @include transition(0.4s);
+        border: none;
+        background: $cff;
+        margin-top: 20px;
+        color: $cff4f;
+        @include respond-to(large) {
+          line-height: 40px;
+          height: 40px;
+          padding: 0 19px;
+          font-size: 14px;
+        }
+        @include respond-to(mdm) {
+          line-height: 40px;
+          height: 40px;
+          padding: 0 20px;
+          font-size: 13px;
+        }
+        @include respond-to(little) {
+          line-height: 40px;
+          height: 40px;
+          padding: 0 25px;
+          font-size: 13px;
+        }
+        i {
+          display: inline-block;
+          margin-right: 10px;
+        }
+        &::before {
+          content: "";
+          position: absolute;
+          left: 0;
+          top: 0;
+          width: 100%;
+          height: 100%;
+          background: #f17677;
+          background: -moz-linear-gradient(top, #f17677 0%, #ee2a4f 100%);
+          background: -webkit-linear-gradient(top, #f17677 0%, #ee2a4f 100%);
+          background: linear-gradient(to bottom, #f17677 0%, #ee2a4f 100%);
+          filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f17677', endColorstr='#ee2a4f',GradientType=0 );
+          box-shadow: 0px 7px 13px rgba(122, 12, 12, 0.27);
+          border-radius: 30px;
+          @include transition(0.4s);
+          z-index: -1;
+          visibility: hidden;
+          opacity: 0;
+        }
+        &:hover {
+          color: $cff;
+          &::before {
+            visibility: visible;
+            opacity: 1;
+          }
+        }
+      }
     }
     .borbibi_step_form {
+      position: relative;
+      .borbibi_complitation {
+        position: absolute;
+        display: none;
+        position: absolute;
+        top: -48px;
+        @include flexDirection(row);
+        p {
+          display: inline-block;
+          padding-right: 10px;
+        }
+        .parcent {
+          color: $cf1;
+          font-family: $play;
+          font-size: $fz28;
+        }
+        @include respond-to(little) {
+          display: block;
+        }
+      }
       .steps {
+        @include respond-to(allsmall) {
+          margin: 0 20px 0 20px;
+        }
+        @include respond-to(little) {
+          display: none;
+        }
         ul {
           @include flexDirection(row);
           align-items: flex-start;
@@ -258,17 +352,17 @@
                 background: $cf293;
                 width: 183px;
               }
-              .number{
+              .number {
                 box-shadow: 0px 3px 4px 4px $cf2f2;
-                  &::before{
-                      visibility: visible;
-                      opacity: 1;
-                      transform:  scale(1);
-                  }
-                  &::after{
-                      visibility: visible;
-                      opacity: 1;
-                  }
+                &::before {
+                  visibility: visible;
+                  opacity: 1;
+                  transform: scale(1);
+                }
+                &::after {
+                  visibility: visible;
+                  opacity: 1;
+                }
               }
             }
             &:last-child {
@@ -307,6 +401,12 @@
               color: $c7272;
               padding-left: 0;
               align-items: flex-start;
+              @include respond-to(mdm) {
+                font-size: 13px;
+              }
+              @include respond-to(allsmall) {
+                font-size: 14px;
+              }
               .current-info {
                 display: none;
               }
@@ -339,18 +439,18 @@
                   opacity: 0;
                 }
                 &::before {
-                    position: absolute;
-                    font-family: "FontAwesome";
-                    content: "\f00c";
-                    left: 10px;
-                    top: 3px;
-                    color: $cff;
-                    font-size: $fz22;
-                    z-index: 9;
-                    visibility: hidden;
-                    opacity: 0;
-                    @include transition(.40s);
-                    transform:  scale(1.3);
+                  position: absolute;
+                  font-family: "FontAwesome";
+                  content: "\f00c";
+                  left: 10px;
+                  top: 3px;
+                  color: $cff;
+                  font-size: $fz22;
+                  z-index: 9;
+                  visibility: hidden;
+                  opacity: 0;
+                  @include transition(0.4s);
+                  transform: scale(1.3);
                 }
               }
             }
@@ -364,6 +464,18 @@
         border-radius: 22px;
         margin-top: 30px;
         box-shadow: 0px 0px 25px rgba($c9e52, 0.15);
+        @include respond-to(mdm) {
+          background: white;
+          padding: 40px 13px;
+          margin-right: 0px;
+        }
+        @include respond-to(allsmall) {
+          margin-right: 20px;
+          margin-left: 20px;
+        }
+        @include respond-to(little) {
+          padding: 40px 20px;
+        }
         .title {
           display: none;
         }
@@ -376,6 +488,9 @@
             font-size: $fz14;
             color: $c46;
             font-family: $poppins;
+            @include respond-to(mdm) {
+              font-size: 12px;
+            }
           }
           .form-control {
             line-height: 40px;
@@ -399,6 +514,10 @@
       .actions {
         padding: 40px 40px;
         margin-right: 40px;
+        @include respond-to(little) {
+          padding: 40px 37px;
+          margin-right: 0;
+        }
         ul {
           padding-left: 0;
           @include flexDirection(row);
@@ -411,32 +530,38 @@
               @include inlineFlex;
               position: relative;
               z-index: 9;
-              @include transition(.40s);
-              &::before{
-                  content: "";
-                  position: absolute;
-                  left: 0;
-                  top: 0;
-                  width: 100%;
-                  height: 100%;
-                  background: #f17677;
-                  background: -moz-linear-gradient(top, #f17677 0%, #ee2a4f 100%);
-                  background: -webkit-linear-gradient(top, #f17677 0%, #ee2a4f 100%);
-                  background: linear-gradient(to bottom, #f17677 0%, #ee2a4f 100%);
-                  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f17677', endColorstr='#ee2a4f',GradientType=0 );
-                  box-shadow: 0px 7px 13px rgba(122, 12, 12, 0.27);
-                  border-radius: 30px;
-                  @include transition(.40s);
-                  z-index: -1;
-                  visibility: hidden;
-                  opacity: 0;
+              @include transition(0.4s);
+              @include respond-to(little) {
+                line-height: 35px;
+                height: 35px;
+                padding: 0 30px;
+                font-size: 14px;
               }
-              &:hover{
-                  color: $cff;
-                  &::before{
-                      visibility: visible;
-                      opacity: 1;
-                  }
+              &::before {
+                content: "";
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                background: #f17677;
+                background: -moz-linear-gradient(top, #f17677 0%, #ee2a4f 100%);
+                background: -webkit-linear-gradient(top, #f17677 0%, #ee2a4f 100%);
+                background: linear-gradient(to bottom, #f17677 0%, #ee2a4f 100%);
+                filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f17677', endColorstr='#ee2a4f',GradientType=0 );
+                box-shadow: 0px 7px 13px rgba(122, 12, 12, 0.27);
+                border-radius: 30px;
+                @include transition(0.4s);
+                z-index: -1;
+                visibility: hidden;
+                opacity: 0;
+              }
+              &:hover {
+                color: $cff;
+                &::before {
+                  visibility: visible;
+                  opacity: 1;
+                }
               }
             }
           }
@@ -445,114 +570,170 @@
     }
   }
 }
-.borbibi_breadcrumb{
-    position: relative;
-    background: url(../images/breadcrumb-image.jpg) no-repeat;
-    background-size: cover;
-    margin: 0;
-    .borbibi_navigation{
-        position: relative;
-        .borbibi_social_icon{
-            li{
-                a{
-                    background: rgba($cff,.40);
-                    i{
-                        color: $cff;
-                    }
-                    
-                }
-            }
-        }
-    }
-}
-fieldset{
-    legend{
-        font-weight: $medium;
-        font-size: $fz20;
-        color: $c9697;
-        margin-bottom: 25px;
-    }
-    .borbibi_field_group{
-        
-        &:not(:last-child){
-            padding-bottom: 30px;
-            border-bottom: 1px solid $ceff1;
-            margin-bottom: 30px;
-        }
-        label{
-            font-size: $fz14;
-            color: $c46;
-            font-family: $poppins;
-        }
-        .form-group{
-
-        }
-        .borbibi_group_field{
-            .group-label{
-                @include flexDirection(row);
-                justify-content: space-between;
-                label{
-                    
-                }
-            }
-            .group-control{
-                @include flexDirection(row);
-                border-radius: 30px;
-                border: 1px solid $cffd;
-                select{
-
-                }
-                >span{
-                    &:last-child{
-                        border-right: 0;
-                    }
-                }
-                .form-control,.select2-container--default{
-                    flex: 0 0 50%;
-                    max-width: 50%;
-                    border-right: 1px solid $cffd;
-                    .select2-selection__rendered {
-                        @extend .select2-selection__rendered;
-                        border: none;
-                      }
-                }
-            }
-        }
-    }
-}
-.borbibi_add_more{
-    color: $cff4f;
-    font-size: $fz14;
-    font-style: italic;
-    @include inlineFlex;
-    margin-bottom: 20px;
-    cursor: pointer;
-    i{
-        display: inline-block;
-        margin-right: 5px;
-        font-size: $fz16;
-        color: $cff4f;
-    }
-}
-.borbibi_add_more_content{
+.borbibi_breadcrumb {
   position: relative;
-    .borbibi_remove_add_more{
-        position: absolute;
-        z-index: 9;
-        padding: 0;
-        background: transparent;
-        border: none;
-        right: -22px;
-        top: 40px;
-        i{
-            font-size: $fz16;
-            color: $cff4f;
+  background: url(../images/breadcrumb-image.jpg) no-repeat;
+  background-size: cover;
+  margin: 0;
+  .borbibi_navigation {
+    position: relative;
+    .borbibi_social_icon {
+      li {
+        a {
+          background: rgba($cff, 0.4);
+          i {
+            color: $cff;
+          }
         }
+      }
     }
+  }
+}
+fieldset {
+  legend {
+    font-weight: $medium;
+    font-size: $fz20;
+    color: $c9697;
+    margin-bottom: 25px;
+  }
+  .borbibi_field_group {
+    .borbibi_aggrement_check {
+      @include respond-to(little) {
+        margin-top: 15px;
+      }
+    }
+    .form-control {
+      font-size: $fz14;
+      padding-left: 15px;
+    }
+    .borbibi_age {
+      @include flexDirection(row);
+      border: 1px solid $cffd;
+      border-radius: 30px;
+      .borbibi_searchbox_age_devider {
+        @include inlineFlex;
+        height: 30px;
+        width: 30px;
+        border-radius: 50%;
+        background: $cece;
+        color: $cf293;
+      }
+      .select2-container--default {
+        flex: 0 0 calc(50% - 15px);
+        border: none;
+        .select2-selection__rendered {
+          border: none;
+        }
+      }
+    }
+    &:not(:last-child) {
+      padding-bottom: 30px;
+      border-bottom: 1px solid $ceff1;
+      margin-bottom: 30px;
+    }
+    label {
+      font-size: $fz14;
+      color: $c46;
+      font-family: $poppins;
+    }
+    .form-group {
+    }
+    .borbibi_group_field {
+      .group-label {
+        @include flexDirection(row);
+        justify-content: space-between;
+        label {
+        }
+      }
+      .group-control {
+        @include flexDirection(row);
+        border-radius: 30px;
+        border: 1px solid $cffd;
+        select {
+        }
+        > span {
+          &:last-child {
+            border-right: 0;
+          }
+        }
+        .form-control,
+        .select2-container--default {
+          flex: 0 0 50%;
+          max-width: 50%;
+          border-right: 1px solid $cffd;
+          font-size: $fz14;
+          .select2-selection__rendered {
+            @extend .select2-selection__rendered;
+            border: none;
+          }
+        }
+      }
+    }
+    .borbibi_signup_finish_content {
+      .borbibi_signup_finish_content_image {
+        position: relative;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        overflow: hidden;
+        img {
+        }
+        &::before {
+          content: "";
+          position: absolute;
+          left: 0;
+          top: 0;
+          width: 100%;
+          height: 100%;
+          background: rgba($c6005, 0.3);
+        }
+      }
+      .borbibi_signup_finish_content_body {
+        text-align: center;
+        padding: 30px 100px;
+        @include respond-to(allsmall) {
+          padding: 30px 14px;
+        }
+        h1 {
+          color: $cff4f;
+          line-height: 55px;
+        }
+      }
+    }
+  }
+}
+.borbibi_add_more {
+  color: $cff4f;
+  font-size: $fz14;
+  font-style: italic;
+  @include inlineFlex;
+  margin-bottom: 20px;
+  cursor: pointer;
+  i {
+    display: inline-block;
+    margin-right: 5px;
+    font-size: $fz16;
+    color: $cff4f;
+  }
+}
+.borbibi_add_more_content {
+  position: relative;
+  .borbibi_remove_add_more {
+    position: absolute;
+    z-index: 9;
+    padding: 0;
+    background: transparent;
+    border: none;
+    right: -22px;
+    top: 40px;
+    i {
+      font-size: $fz16;
+      color: $cff4f;
+    }
+  }
 }
 .borbibi_add_more_container {
-    border: 1px solid $ceff1;
-    padding: 15px 15px;
+  border: 1px solid $ceff1;
+  padding: 15px 15px;
 }
 /*------------------------------------------
 ------------------------------------------*/

@@ -5,6 +5,9 @@
     li {
       &:not(:last-child) {
         margin-right: 14px;
+        @include respond-to(allsmall){
+          margin-right: 8px;
+        }
       }
       a {
         height: 45px;
@@ -14,12 +17,26 @@
         border-radius: 50%;
         position: relative;
         z-index: 5;
+        @include respond-to(mdm){
+          height: 40px;
+          width: 40px;
+        }
+        @include respond-to(allsmall){
+          height: 35px;
+          width: 35px;
+        }
         i {
           font-size: $fz16;
           color: $c8f8;
           position: relative;
           z-index: 5;
           @include transition(.40s);
+          @include respond-to(mdm){
+            font-size: 10px;
+          }
+          @include respond-to(allsmall){
+            font-size: 12px;
+          }
         }
         &::before {
           content: "";

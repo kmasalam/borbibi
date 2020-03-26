@@ -3,6 +3,14 @@
     // background: url(../images/success-bg.jpg) no-repeat;
     background-size: cover;
     @include borbibi_section__title($cff, $cffe, false);
+    h2{
+      @include respond-to(mdm){
+        font-size: 24px;
+      }
+      @include respond-to(allsmall){
+        font-size: 20px;
+      }
+    }
     margin-bottom: 0;
     &__elements{
         position: absolute;
@@ -58,6 +66,9 @@
               a{
                 font-weight: $extralight;
                 color: $cff;
+                @include respond-to(mdm){
+                  font-size: 12px;
+                }
               }
           }
           .borbibi_success_item__inner__content_info{
@@ -67,6 +78,9 @@
             p{
                 font-weight: $extralight;
                 color: $cff;
+                @include respond-to(mdm){
+                  font-size: 12px;
+                }
             }
           }
         }
